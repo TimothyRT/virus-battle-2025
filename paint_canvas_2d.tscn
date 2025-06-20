@@ -1,0 +1,146 @@
+[gd_scene load_steps=11 format=3 uid="uid://cjohahpkb5m87"]
+
+[ext_resource type="Script" path="res://paint_canvas_2d.gd" id="1_2ps4q"]
+[ext_resource type="Script" path="res://texture_rect.gd" id="2_1eutl"]
+[ext_resource type="Script" path="res://sub_viewport.gd" id="3_y26kr"]
+[ext_resource type="FontFile" uid="uid://c525w18nlle0a" path="res://fonts/Basophil.ttf" id="4_2ahca"]
+[ext_resource type="Material" uid="uid://djejv5hbu735o" path="res://shaders/displacement.tres" id="4_8kbff"]
+[ext_resource type="AudioStream" uid="uid://brfwr5fb67t1" path="res://sfx/fail.mp3" id="5_876ck"]
+[ext_resource type="Script" path="res://store_manager.gd" id="6_s7idn"]
+[ext_resource type="Texture2D" uid="uid://cr1numidr3car" path="res://ui/IconMacrophage.png" id="7_ytem7"]
+[ext_resource type="Texture2D" uid="uid://b4dsuhdrgels0" path="res://ui/IconNeutrophil.png" id="8_c3rjc"]
+[ext_resource type="Texture2D" uid="uid://co5ftdsss71rw" path="res://ui/IconBacteriophage.png" id="9_gdn2w"]
+
+[node name="PaintCanvas2D" type="CanvasLayer"]
+script = ExtResource("1_2ps4q")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_left = 135.0
+offset_top = 750.0
+offset_right = 399.0
+offset_bottom = 1014.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+unique_name_in_owner = true
+handle_input_locally = false
+size = Vector2i(264, 264)
+render_target_update_mode = 4
+script = ExtResource("3_y26kr")
+
+[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport"]
+unique_name_in_owner = true
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_1eutl")
+
+[node name="Label" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 25.0
+offset_top = 534.0
+offset_right = 1138.0
+offset_bottom = 557.0
+grow_vertical = 2
+text = "Prediction: N/A"
+autowrap_mode = 3
+
+[node name="SubmitButton" type="Button" parent="."]
+unique_name_in_owner = true
+material = ExtResource("4_8kbff")
+offset_left = 516.0
+offset_top = 956.0
+offset_right = 572.0
+offset_bottom = 981.0
+theme_override_fonts/font = ExtResource("4_2ahca")
+theme_override_font_sizes/font_size = 64
+text = "SUBMIT"
+
+[node name="FailPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_876ck")
+
+[node name="StoreManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("6_s7idn")
+
+[node name="MacrophageButton" type="TextureButton" parent="StoreManager"]
+unique_name_in_owner = true
+offset_left = 787.0
+offset_top = 790.0
+offset_right = 1027.0
+offset_bottom = 1026.0
+texture_normal = ExtResource("7_ytem7")
+
+[node name="NeutrophilButton" type="TextureButton" parent="StoreManager"]
+unique_name_in_owner = true
+visible = false
+offset_left = 1062.0
+offset_top = 717.0
+offset_right = 1302.0
+offset_bottom = 1026.0
+texture_normal = ExtResource("8_c3rjc")
+
+[node name="BacteriophageButton" type="TextureButton" parent="StoreManager"]
+unique_name_in_owner = true
+visible = false
+offset_left = 1326.0
+offset_top = 724.0
+offset_right = 1566.0
+offset_bottom = 1033.0
+texture_normal = ExtResource("9_gdn2w")
+
+[node name="MacrophageText" type="RichTextLabel" parent="StoreManager"]
+unique_name_in_owner = true
+material = ExtResource("4_8kbff")
+offset_left = 1008.0
+offset_top = 989.0
+offset_right = 1048.0
+offset_bottom = 1062.0
+theme_override_fonts/normal_font = ExtResource("4_2ahca")
+theme_override_font_sizes/normal_font_size = 72
+bbcode_enabled = true
+text = "[center][color=white]1[/color][/center]"
+fit_content = true
+
+[node name="NeutrophilText" type="RichTextLabel" parent="StoreManager"]
+unique_name_in_owner = true
+visible = false
+material = ExtResource("4_8kbff")
+offset_left = 1283.0
+offset_top = 989.0
+offset_right = 1323.0
+offset_bottom = 1062.0
+theme_override_fonts/normal_font = ExtResource("4_2ahca")
+theme_override_font_sizes/normal_font_size = 72
+bbcode_enabled = true
+text = "[center][color=white]1[/color][/center]"
+fit_content = true
+
+[node name="BacteriophageText" type="RichTextLabel" parent="StoreManager"]
+unique_name_in_owner = true
+visible = false
+material = ExtResource("4_8kbff")
+offset_left = 1547.0
+offset_top = 989.0
+offset_right = 1587.0
+offset_bottom = 1062.0
+theme_override_fonts/normal_font = ExtResource("4_2ahca")
+theme_override_font_sizes/normal_font_size = 72
+bbcode_enabled = true
+text = "[center][color=white]1[/color][/center]"
+fit_content = true
+
+[connection signal="pressed" from="SubmitButton" to="." method="_on_button_pressed"]
+[connection signal="mouse_entered" from="StoreManager/MacrophageButton" to="StoreManager" method="_on_macrophage_button_mouse_entered"]
+[connection signal="mouse_exited" from="StoreManager/MacrophageButton" to="StoreManager" method="_on_macrophage_button_mouse_exited"]
+[connection signal="mouse_entered" from="StoreManager/NeutrophilButton" to="StoreManager" method="_on_neutrophil_button_mouse_entered"]
+[connection signal="mouse_exited" from="StoreManager/NeutrophilButton" to="StoreManager" method="_on_neutrophil_button_mouse_exited"]
+[connection signal="mouse_entered" from="StoreManager/BacteriophageButton" to="StoreManager" method="_on_bacteriophage_button_mouse_entered"]
+[connection signal="mouse_exited" from="StoreManager/BacteriophageButton" to="StoreManager" method="_on_bacteriophage_button_mouse_exited"]

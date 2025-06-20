@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b76jkq4hsrrlr"]
+
+[ext_resource type="Script" path="res://doodle_labels.gd" id="1_hqjyd"]
+
+[node name="DoodleLabels" type="Node2D"]
+script = ExtResource("1_hqjyd")

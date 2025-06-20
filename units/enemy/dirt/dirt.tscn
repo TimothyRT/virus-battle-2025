@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://ed4ok62r74s0"]
+
+[ext_resource type="Script" path="res://units/enemy/dirt/dirt.gd" id="1_ca8m3"]
+[ext_resource type="Texture2D" uid="uid://cj4hbtkcoa8nt" path="res://units/enemy/dirt/Dirt.png" id="2_p2b2w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_13a67"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p2b2w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b730y"]
+radius = 17.2461
+
+[node name="Dirt" type="CharacterBody2D"]
+script = ExtResource("1_ca8m3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_13a67")
+autoplay = "default"
+frame_progress = 0.972929
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -10)
+rotation = -3.14159
+scale = Vector2(1.15968, -1.13688)
+shape = SubResource("CircleShape2D_b730y")

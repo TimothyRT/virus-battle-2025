@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://63q2q7rw0uk3"]
+
+[ext_resource type="Script" path="res://units/enemy/aspergillus/aspergillus.gd" id="1_5nkcc"]
+[ext_resource type="Texture2D" uid="uid://d20q1lwys2pm" path="res://units/enemy/aspergillus/Asp FINAL 0.png" id="2_cc8rk"]
+[ext_resource type="Texture2D" uid="uid://qjig1rc3fib7" path="res://units/enemy/aspergillus/Asp FINAL 1.png" id="3_quspy"]
+[ext_resource type="Texture2D" uid="uid://dtl5xklfbbj0n" path="res://units/enemy/aspergillus/Asp FINAL 2.png" id="4_1x4t6"]
+[ext_resource type="Texture2D" uid="uid://bbhj1kcyky4f3" path="res://units/enemy/aspergillus/Asp FINAL 3.png" id="5_b7i78"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_13a67"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_cc8rk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_quspy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1x4t6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_b7i78")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b730y"]
+radius = 17.2461
+
+[node name="Aspergillus" type="CharacterBody2D"]
+script = ExtResource("1_5nkcc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_13a67")
+autoplay = "default"
+frame_progress = 0.725656
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(-1.15968, 0.936876)
+shape = SubResource("CircleShape2D_b730y")

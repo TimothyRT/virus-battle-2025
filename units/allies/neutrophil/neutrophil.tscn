@@ -1,0 +1,101 @@
+[gd_scene load_steps=20 format=3 uid="uid://bpyvwh10j1ods"]
+
+[ext_resource type="Script" path="res://units/allies/neutrophil/neutrophil.gd" id="1_dswe5"]
+[ext_resource type="Texture2D" uid="uid://bb7l13sls6a4h" path="res://units/allies/neutrophil/Neutrophil FINAL 0.png" id="2_6u1n3"]
+[ext_resource type="Texture2D" uid="uid://f7vsciypxtiw" path="res://units/allies/neutrophil/Neutrophil FINAL 1.png" id="3_nnuhw"]
+[ext_resource type="Texture2D" uid="uid://dad6t6ro8mfca" path="res://units/allies/neutrophil/Neutrophil FINAL 2.png" id="4_kw2vt"]
+[ext_resource type="Texture2D" uid="uid://igee8pjsxli2" path="res://units/allies/neutrophil/Neutrophil FINAL 3.png" id="5_xe20j"]
+[ext_resource type="Texture2D" uid="uid://cpfd3sffw6i0l" path="res://units/allies/neutrophil/Neutrophil FINAL 4.png" id="6_vryjo"]
+[ext_resource type="Texture2D" uid="uid://chigy82ck1u81" path="res://units/allies/neutrophil/Neutrophil FINAL 5.png" id="7_11gle"]
+[ext_resource type="Texture2D" uid="uid://b7wi2u8nmo07e" path="res://units/allies/neutrophil/Neutrophil FINAL 6.png" id="8_8xxhv"]
+[ext_resource type="Texture2D" uid="uid://bkx75lka0ytfk" path="res://units/allies/neutrophil/Neutrophil FINAL 7.png" id="9_1b1kb"]
+[ext_resource type="Texture2D" uid="uid://bbocdomnpmk40" path="res://units/allies/neutrophil/Neutrophil FINAL 8.png" id="10_u61x4"]
+[ext_resource type="Texture2D" uid="uid://320ok02tb6kv" path="res://units/allies/neutrophil/Neutrophil FINAL 9.png" id="11_ejlpv"]
+[ext_resource type="Texture2D" uid="uid://fdjv8rk65p3" path="res://units/allies/neutrophil/Neutrophil FINAL 10.png" id="12_4hyim"]
+[ext_resource type="Texture2D" uid="uid://do4d1qkg34ql1" path="res://units/allies/neutrophil/Neutrophil FINAL 11.png" id="13_yq6mv"]
+[ext_resource type="Texture2D" uid="uid://dyg280am2uuq0" path="res://units/allies/neutrophil/Neutrophil FINAL 12.png" id="14_emtq6"]
+[ext_resource type="Texture2D" uid="uid://banf21srevawo" path="res://units/allies/neutrophil/Neutrophil FINAL 13.png" id="15_h2xvx"]
+[ext_resource type="Texture2D" uid="uid://dd0a6nb432d08" path="res://units/allies/neutrophil/Neutrophil FINAL 14.png" id="16_rk4v8"]
+[ext_resource type="Texture2D" uid="uid://bptklpisgmemn" path="res://units/allies/neutrophil/Neutrophil FINAL 15.png" id="17_mp388"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d3lvk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6u1n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nnuhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kw2vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xe20j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vryjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_11gle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8xxhv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1b1kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_u61x4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ejlpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4hyim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_yq6mv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_emtq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_h2xvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_rk4v8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mp388")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cq1dc"]
+radius = 2.46919
+
+[node name="Neutrophil" type="CharacterBody2D"]
+script = ExtResource("1_dswe5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_d3lvk")
+autoplay = "default"
+frame_progress = 0.0979261
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-21, 21)
+scale = Vector2(8.62264, 4.91647)
+shape = SubResource("CircleShape2D_cq1dc")
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
+
+[node name="Marker2D" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(53, 41)
+
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]

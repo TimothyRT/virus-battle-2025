@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://te0negnvueiq"]
+
+[ext_resource type="Script" path="res://screens/tutorial.gd" id="1_3dpsx"]
+[ext_resource type="Texture2D" uid="uid://7jdopaxyyh6g" path="res://ui/mockup.png" id="1_ejn5q"]
+[ext_resource type="FontFile" uid="uid://c525w18nlle0a" path="res://fonts/Basophil.ttf" id="2_gjl0b"]
+
+[node name="Tutorial" type="CanvasLayer"]
+script = ExtResource("1_3dpsx")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ejn5q")
+
+[node name="LevelLabel" type="RichTextLabel" parent="."]
+offset_left = 1275.0
+offset_top = 639.0
+offset_right = 1618.0
+offset_bottom = 839.0
+theme_override_fonts/normal_font = ExtResource("2_gjl0b")
+theme_override_font_sizes/normal_font_size = 100
+bbcode_enabled = true
+text = "[center][color=black]Level ?[/color][/center]"
+fit_content = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

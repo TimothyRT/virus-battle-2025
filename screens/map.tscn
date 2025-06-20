@@ -1,0 +1,239 @@
+[gd_scene load_steps=20 format=3 uid="uid://dog1yaclvqemi"]
+
+[ext_resource type="PackedScene" uid="uid://dalelvq4e5fs7" path="res://ui/player.tscn" id="1_nuhb2"]
+[ext_resource type="Shader" path="res://shaders/noise.gdshader" id="6_nsbfy"]
+[ext_resource type="Texture2D" uid="uid://bfauxe8mgwafr" path="res://assets/map/Map - F Top.png" id="7_33jyg"]
+[ext_resource type="Texture2D" uid="uid://b4bx78s7ehe3x" path="res://assets/map/Map - O Top.png" id="8_k6ak1"]
+[ext_resource type="Texture2D" uid="uid://snv4joe5wacm" path="res://assets/map/Map - F Bottom.png" id="9_6wiwx"]
+[ext_resource type="Texture2D" uid="uid://dquiywkxoev4a" path="res://assets/map/Map - Jantung F.png" id="10_w4wfd"]
+[ext_resource type="Script" path="res://screens/portal_kiri_atas.gd" id="11_076lq"]
+[ext_resource type="Texture2D" uid="uid://bmdnhcmdp6r6d" path="res://assets/map/Map - O Bottom.png" id="11_slyd5"]
+[ext_resource type="PackedScene" uid="uid://bckqfet061wfp" path="res://wall.tscn" id="12_4oaj1"]
+[ext_resource type="Script" path="res://screens/portal_kanan_atas.gd" id="12_5w81y"]
+[ext_resource type="PackedScene" uid="uid://jor68bo58f8l" path="res://wall_bottom.tscn" id="13_cndyx"]
+[ext_resource type="Script" path="res://screens/portal_kiri_bawah.gd" id="13_mv3yi"]
+[ext_resource type="Script" path="res://screens/portal_kanan_bawah.gd" id="14_besh3"]
+[ext_resource type="PackedScene" uid="uid://utmyf54y5qb" path="res://charas/wbc.tscn" id="17_xcepx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m7sl6"]
+shader = ExtResource("6_nsbfy")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dj3yk"]
+shader = ExtResource("6_nsbfy")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6ff2v"]
+shader = ExtResource("6_nsbfy")
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cxxnq"]
+radius = 9.0365
+height = 293.589
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t8hpv"]
+radius = 137.383
+
+[node name="Map" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("1_nuhb2")]
+position = Vector2(-512, -1973)
+
+[node name="Map-FTop" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_m7sl6")
+position = Vector2(240, -785)
+texture = ExtResource("7_33jyg")
+
+[node name="Map-OTop" type="Sprite2D" parent="."]
+z_index = 10
+position = Vector2(240, -785)
+texture = ExtResource("8_k6ak1")
+
+[node name="Map-FBottom" type="Sprite2D" parent="."]
+z_index = 20
+material = SubResource("ShaderMaterial_dj3yk")
+position = Vector2(240, -785)
+texture = ExtResource("9_6wiwx")
+
+[node name="Map-JantungF" type="Sprite2D" parent="."]
+z_index = 30
+material = SubResource("ShaderMaterial_6ff2v")
+position = Vector2(240, -785)
+texture = ExtResource("10_w4wfd")
+
+[node name="Map-OBottom" type="Sprite2D" parent="."]
+z_index = 40
+position = Vector2(240, -785)
+texture = ExtResource("11_slyd5")
+
+[node name="WallLayer" type="Node2D" parent="."]
+z_index = 100
+position = Vector2(-539, -1876)
+
+[node name="Wall" parent="WallLayer" instance=ExtResource("12_4oaj1")]
+visible = false
+position = Vector2(76, -37)
+
+[node name="ColShape Wall" parent="WallLayer/Wall" index="0"]
+position = Vector2(-1390, 2082)
+rotation = 1.59855
+shape = SubResource("CapsuleShape2D_cxxnq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(387, 296, 385, 335, 336, 425, 341, 477, 413, 444, 441, 464, 494, 545, 567, 443, 587, 438, 632, 298, 635, 241, 539, 60, 473, -34, 338, -103, 168, -121, -87, -129, -273, -188, -429, -335, -518, -605, -461, -838, -204, -1016, -161, -348, 638, -280, 733, 616, 312, 593, 291, 405)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(386, 305, 420, 251, 399, 162, 357, 86, 158, 24, -158, 25, -389, -73, -574, -272, -655, -423, -600, 113)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(-625, -358, -679, -539, -653, -819, -584, -1027, -471, -1172, -374, -1233, -169, -1314, -32, -1438, -751, -1345, -786, -311)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(845, -1892, 790, -1735, 777, -1511, 830, -1369, 793, -1288, 557, -1310, 447, -1270, 409, -1352, 461, -1614, 407, -1856, 372, -1883, 370, -1942)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(-54, -1425, 109, -1668, 315, -1853, 440, -1905, 340, -1914, -217, -1559, -141, -1410)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(801, -1860, 857, -1892, 1013, -1777, 1137, -1643, 1264, -1457, 1264, -1457, 1312, -1363, 1350, -1375, 1313, -1852, 794, -1951)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(1345, -1375, 1475, -1355, 1665, -1268, 1810, -1129, 1861, -975, 1896, -630, 1900, -135, 1871, 115, 2207, 31, 1943, -1320, 1341, -1442)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(979, 563, 1329, 563, 1614, 521, 1770, 357, 1896, 49, 2005, 165, 1768, 624, 961, 649)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(971, 414, 989, 576, 970, 596, 947, 403, 898, 313, 804, 255, 659, 246, 648, -87, 796, -91, 1072, -89, 1072, -89, 1416, -134, 1606, -107, 1757, -17, 1633, 239, 1517, 353, 1312, 398)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(627, -220, 835, -233, 1180, -281, 1495, -278, 1585, -35, 1755, -14, 1724, -1034, 1615, -1149, 1476, -1210, 1359, -1004, 1396, -562, 1330, -465, 1174, -492, 1001, -593, 779, -655)
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="WallLayer/Wall"]
+polygon = PackedVector2Array(224, -225, 699, -273, 812, -636, 750, -766, 824, -1140, 604, -1146, 442, -1110, 420, -1066, 466, -738, 432, -608, 166, -562, -28, -410, -96, -402, -148, -572, -94, -902, -114, -1002, -166, -1028, -236, -992, -188, -314)
+
+[node name="Wall Bottom" parent="WallLayer" instance=ExtResource("13_cndyx")]
+visible = false
+position = Vector2(-498.445, 793.046)
+
+[node name="ColShape Wall" parent="WallLayer/Wall Bottom" index="0"]
+position = Vector2(-601.555, 1139.95)
+rotation = 0.0848518
+shape = SubResource("CapsuleShape2D_cxxnq")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+position = Vector2(74.4451, 347.954)
+rotation = 0.0848518
+polygon = PackedVector2Array(1153.45, 2493.22, 1156.71, 2507.99, 1182.09, 2534.94, 1264.3, 2581.14, 1320.97, 2598.4, 1407.76, 2604.06, 1535.11, 2579.18, 1611.37, 2543.59, 1716.69, 2460.36, 1763.23, 2382.14, 1763.23, 2382.14, 1766.69, 2363.78, 1672.94, 2417.92, 1598.67, 2453.34, 1546.05, 2471.87, 1453.58, 2493.78, 1380.93, 2500.96, 1255.44, 2500.6, 1173.55, 2493.51, 1157.67, 2483.82)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(596.445, 2540.95, 623.445, 2694.95, 695.445, 2875.95, 832.445, 3056.95, 879.445, 3090.95, 926.445, 3102.95, 979.445, 3090.95, 1046.45, 3052.95, 992.445, 3012.95, 937.445, 2957.95, 917.445, 2921.95, 917.445, 2876.95, 926.445, 2816.95, 922.445, 2786.95, 911.445, 2767.95, 873.445, 2743.95, 818.445, 2738.95, 770.445, 2716.95, 675.445, 2629.95, 602.445, 2541.95)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(1201.45, 3126.95, 1208.45, 3140.95, 1203.45, 3170.95, 1211.45, 3196.95, 1246.45, 3215.95, 1315.45, 3228.95, 1427.45, 3223.95, 1579.45, 3188.95, 1669.45, 3151.95, 1737.45, 3106.95, 1783.45, 3057.95, 1815.45, 2988.95, 1850.45, 2881.95, 1882.45, 2778.95, 1898.45, 2702.95, 1900.45, 2645.95, 1888.45, 2592.95, 1861.45, 2558.95, 1847.45, 2568.95, 1828.45, 2607.95, 1823.45, 2634.95, 1810.45, 2682.95, 1787.45, 2737.95, 1763.45, 2782.95, 1744.45, 2815.95, 1722.45, 2858.95, 1696.45, 2917.95, 1665.45, 2975.95, 1637.45, 3012.95, 1609.45, 3040.95, 1573.45, 3065.95, 1520.45, 3088.95, 1392.45, 3112.95, 1303.45, 3121.95)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(1958.45, 2188.95, 1957.45, 2284.95, 1931.45, 2376.95, 1882.45, 2463.95, 1828.45, 2498.95, 1840.45, 2284.95, 1883.45, 2224.95)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+scale = Vector2(1.35839, 1.03784)
+polygon = PackedVector2Array(461.167, 2316.31, 598.094, 2425.19, 670.975, 2470.47, 844.71, 2518.65, 1005.93, 2519.61, 1187.03, 2447.35, 1300.4, 2392.42, 1251.81, 2508.05, 1189.24, 2574.53, 1097.21, 2624.64, 947.037, 2653.54, 815.263, 2638.13, 681.281, 2592.84, 575.273, 2521.54, 539.201, 2485.89, 489.142, 2392.42)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(473.445, 2107.95, 656.445, 2201.95, 870.445, 2299.95, 1017.45, 2338.95, 1271.45, 2358.95, 1474.45, 2357.95, 1527.45, 2358.95, 1436.45, 2404.95, 1186.45, 2472.95, 1011.45, 2517.95, 921.445, 2508.95, 878.445, 2493.95, 730.445, 2401.95, 669.445, 2354.95, 561.445, 2242.95)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(1351.45, 2224.95, 1528.45, 2309.95, 1637.45, 2310.95, 1718.45, 2283.95, 1859.45, 2159.95, 1942.45, 2015.95, 1713.45, 2099.95, 1602.45, 2182.95)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(899.445, 2070.95, 1120.45, 1970.95, 1349.45, 1932.95, 1652.45, 1935.95, 1972.45, 1868.95, 2048.45, 1869.95, 2132.45, 1888.95, 1591.45, 2037.95, 1532.45, 2091.95, 1399.45, 2132.95)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(414.445, -470.046, 305.445, -494.046, 200.445, -480.046, 85.4451, -407.046, 38.4451, -330.046, 22.4451, -193.046, 54.4451, -44.046, 121.445, -75.046, 223.445, -80.046)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(317.445, 114.954, 240.445, -113.046, 218.445, -88.046, 283.445, 108.954, 167.445, 125.954, 69.4451, 195.954, 39.4451, 707.954, 78.4451, 1330.95, 112.445, 1580.95, 172.445, 1682.95, 172.445, 1682.95, 395.445, 1810.95, 693.445, 1840.95, 1773.45, 1840.95)
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(2484.45, -703.046, 2533.45, -561.046, 2568.45, -120.046, 2582.45, 365.954, 2570.45, 995.954, 2536.45, 1451.95, 2503.45, 1567.95, 2380.45, 1698.95, 2227.45, 1763.95, 1919.45, 1825.95, 1702.45, 1843.95, 2122.45, -236.046, 1598.45, -635.046, 1740.45, -826.046, 2039.45, -962.046, 2316.45, -879.046)
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(1064.45, -848.046, 1223.45, -577.046, 1410.45, -572.046, 1534.45, -430.046, 1554.45, -225.046, 1512.45, -98.046, 1630.45, 47.954, 1714.45, 463.954, 1656.45, 621.954, 1666.45, 843.954, 1588.45, 951.954, 1494.45, 955.954, 1144.45, 819.954, 1004.45, 839.954, 766.445, 815.954, 1110.45, 1070.95, 1724.45, 1559.95, 1983.45, 994.954, 1983.45, 994.954, 2225.45, -910.046, 2039.45, -963.046, 1903.45, -957.046, 1665.45, -922.046, 1171.45, -904.046)
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(596.445, -552.046, 513.445, -650.046, 374.445, -695.046, 231.445, -675.046, 109.445, -629.046, -66.5549, -465.046, -158.555, -161.046, -197.555, 343.954, -173.555, 1314.95, -383.555, 1310.95, -312.555, -841.046, 514.445, -723.046, 684.445, -534.046, 393.445, -420.046, 399.445, -469.046, 524.445, -532.046)
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(-189.555, 1233.95, -109.555, 1562.95, 170.445, 1822.95, 299.445, 1938.95, 377.445, 2068.95, 437.445, 2262.95, 461.445, 2490.95, 491.445, 2683.95, 653.445, 3013.95, 774.445, 3173.95, 910.445, 3254.95, 1136.45, 3320.95, 1352.45, 3323.95, 1360.45, 3446.95, 679.445, 3296.95, 94.4451, 2295.95, -233.555, 1251.95)
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(1333.45, 3411.95, 1999.45, 3165.95, 2322.45, 2212.95, 2386.45, 1828.95, 2230.45, 1970.95, 2101.45, 2185.95, 1983.45, 2440.95, 1971.45, 2549.95, 2015.45, 2765.95, 1974.45, 2945.95, 1803.45, 3154.95, 1552.45, 3279.95, 1328.45, 3324.95)
+
+[node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(633.445, -520.046, 709.445, -499.046, 727.445, -678.046, 811.445, -884.046, 954.445, -993.046, 1223.45, -1052.05, 1463.45, -1076.05, 1492.45, -1168.05, 653.445, -1070.05)
+
+[node name="CollisionPolygon2D17" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(1461.45, -1084.05, 1765.45, -1109.05, 2033.45, -1099.05, 2227.45, -1073.05, 2393.45, -1016.05, 2560.45, -879.046, 2608.45, -1009.05, 2042.45, -1188.05, 1472.45, -1113.05)
+
+[node name="CollisionPolygon2D18" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(2350.45, 1901.95, 2787.45, 1826.95, 2806.45, 400.954, 2718.45, 424.954, 2725.45, 933.954, 2729.45, 1227.95, 2714.45, 1364.95, 2673.45, 1534.95, 2590.45, 1696.95, 2497.45, 1776.95, 2362.45, 1853.95)
+
+[node name="CollisionPolygon2D19" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(2841.45, -214.046, 2841.45, 449.954, 2708.45, 442.954, 2739.45, -10.046, 2715.45, -591.046, 2658.45, -745.046, 2483.45, -957.046, 2631.45, -933.046, 2806.45, -511.046)
+
+[node name="CollisionPolygon2D20" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(992.445, -443.046, 1174.45, -905.046, 1034.45, -857.046, 964.445, -792.046, 917.445, -632.046, 902.445, -478.046, 800.445, -323.046, 793.445, -430.046, 765.445, -484.046, 694.445, -525.046, 694.445, -525.046, 753.445, -320.046, 887.445, -303.046)
+
+[node name="CollisionPolygon2D21" type="CollisionPolygon2D" parent="WallLayer/Wall Bottom"]
+polygon = PackedVector2Array(423.445, 1892.95, 556.445, 2049.95, 601.445, 2087.95, 660.445, 2102.95, 712.445, 2092.95, 730.445, 2056.95, 708.445, 1994.95, 636.445, 1955.95, 443.93, 1899.01)
+
+[node name="Wbc" parent="." instance=ExtResource("17_xcepx")]
+position = Vector2(-517, -1976)
+
+[node name="Portal Kiri Atas" type="StaticBody2D" parent="."]
+z_index = 100
+position = Vector2(47, -1564)
+collision_layer = 64
+collision_mask = 0
+script = ExtResource("11_076lq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal Kiri Atas"]
+position = Vector2(-13, 14)
+shape = SubResource("CircleShape2D_t8hpv")
+debug_color = Color(0.320863, 0.0849218, 0.111012, 0.890196)
+
+[node name="Portal Kanan Atas" type="StaticBody2D" parent="."]
+z_index = 100
+position = Vector2(-226, -1638)
+collision_layer = 64
+collision_mask = 0
+script = ExtResource("12_5w81y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal Kanan Atas"]
+position = Vector2(845, 219)
+shape = SubResource("CircleShape2D_t8hpv")
+debug_color = Color(0.320863, 0.0849218, 0.111012, 0.890196)
+
+[node name="Portal Kiri Bawah" type="StaticBody2D" parent="."]
+z_index = 100
+position = Vector2(-588, -1661)
+collision_layer = 64
+collision_mask = 0
+script = ExtResource("13_mv3yi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal Kiri Bawah"]
+position = Vector2(-8, 2)
+shape = SubResource("CircleShape2D_t8hpv")
+debug_color = Color(0.320863, 0.0849218, 0.111012, 0.890196)
+
+[node name="Portal Kanan Bawah" type="StaticBody2D" parent="."]
+z_index = 100
+position = Vector2(-223, -1641)
+collision_layer = 64
+collision_mask = 0
+script = ExtResource("14_besh3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal Kanan Bawah"]
+position = Vector2(-5, 7)
+shape = SubResource("CircleShape2D_t8hpv")
+debug_color = Color(0.320863, 0.0849218, 0.111012, 0.890196)
+
+[editable path="WallLayer/Wall"]
+[editable path="WallLayer/Wall Bottom"]

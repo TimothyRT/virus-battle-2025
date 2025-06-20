@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1.2042484mm"
+   height="1.1607287mm"
+   viewBox="0 0 1.2042484 1.1607287"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="Cells.svg"
+   inkscape:export-filename="Cursor - Exclamation.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#15366e"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="16"
+     inkscape:cx="10.25"
+     inkscape:cy="8.78125"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="wbc" /><defs
+     id="defs1" /><g
+     inkscape:groupmode="layer"
+     id="wbc"
+     inkscape:label="WBC Top"
+     style="display:inline"
+     transform="translate(-68.637153,-104.8357)"
+     inkscape:export-filename="Map - WBC Top.png"
+     inkscape:export-xdpi="747.42004"
+     inkscape:export-ydpi="747.42004"><path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:3.1;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       d="m 68.994971,105.03064 c -0.0649,0.0349 -0.0121,0.13349 -0.087,0.18587 -0.0665,0.0465 -0.20079,0.0757 -0.16789,0.1499 0.0231,0.0521 0.13772,0.003 0.1649,0.13791 0.0103,0.0513 -0.10068,0.12015 -0.054,0.17689 0.0518,0.0629 0.15379,0.032 0.22486,0.0719 0.0816,0.0459 0.0605,0.12665 0.1529,0.14091 0.13946,0.0215 0.0543,-0.10187 0.19033,-0.13945 0.0995,-0.0275 0.13149,0.0282 0.19942,-0.0494 0.0754,-0.0862 -0.0417,-0.12626 -0.027,-0.23985 0.0114,-0.0878 0.15007,-0.0788 0.14991,-0.17689 -1.5e-4,-0.0903 -0.19071,-0.0581 -0.20687,-0.14689 0,0 -0.0428,-0.18001 -0.12895,-0.20388 -0.10509,-0.0291 -0.0951,0.1392 -0.20387,0.14691 -0.10595,0.008 -0.13042,-0.095 -0.20681,-0.0539 z"
+       id="path72"
+       sodipodi:nodetypes="ssssssssssssssss"
+       inkscape:export-filename="WBC.png"
+       inkscape:export-xdpi="747"
+       inkscape:export-ydpi="747" /></g></svg>

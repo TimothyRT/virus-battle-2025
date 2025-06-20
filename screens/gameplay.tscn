@@ -1,0 +1,113 @@
+[gd_scene load_steps=12 format=3 uid="uid://d3g1ko2dpkjgr"]
+
+[ext_resource type="Script" path="res://screens/gameplay.gd" id="1_ufamm"]
+[ext_resource type="Texture2D" uid="uid://bsqimy60ljc0m" path="res://ui/gameplay overlay.png" id="2_gkc5d"]
+[ext_resource type="PackedScene" uid="uid://drqko7rq82jwx" path="res://ui/bg.tscn" id="2_wbc4x"]
+[ext_resource type="Script" path="res://screens/game_area.gd" id="3_k5kly"]
+[ext_resource type="Material" uid="uid://djejv5hbu735o" path="res://shaders/displacement.tres" id="4_di0rk"]
+[ext_resource type="FontFile" uid="uid://c525w18nlle0a" path="res://fonts/Basophil.ttf" id="4_ni0p8"]
+[ext_resource type="PackedScene" uid="uid://bnxwg0mm6o1ec" path="res://units/allies/tank/tank.tscn" id="5_leski"]
+[ext_resource type="PackedScene" uid="uid://cjohahpkb5m87" path="res://paint_canvas_2d.tscn" id="5_wx0m2"]
+[ext_resource type="AudioStream" uid="uid://cp2bsdfgoqbaq" path="res://sfx/oxy.mp3" id="8_bp7tg"]
+[ext_resource type="AudioStream" uid="uid://dex3127re2jp6" path="res://sfx/purchase.mp3" id="9_vt876"]
+[ext_resource type="AudioStream" uid="uid://o8y80vm8cqso" path="res://sfx/snd_bgm.mp3" id="11_8ilyt"]
+
+[node name="Gameplay" type="Node"]
+script = ExtResource("1_ufamm")
+
+[node name="PaintCanvas2D" parent="." instance=ExtResource("5_wx0m2")]
+layer = 2
+
+[node name="OverlayCanvas" type="CanvasLayer" parent="."]
+
+[node name="DebugText" type="RichTextLabel" parent="OverlayCanvas"]
+unique_name_in_owner = true
+visible = false
+offset_left = 1400.0
+offset_top = 300.0
+offset_right = 1710.0
+offset_bottom = 340.0
+fit_content = true
+
+[node name="EnemyDebugText" type="RichTextLabel" parent="OverlayCanvas"]
+unique_name_in_owner = true
+visible = false
+offset_left = 1400.0
+offset_top = 300.0
+offset_right = 1779.0
+offset_bottom = 386.0
+theme_override_fonts/normal_font = ExtResource("4_ni0p8")
+theme_override_font_sizes/normal_font_size = 96
+bbcode_enabled = true
+fit_content = true
+
+[node name="TextureRect" type="TextureRect" parent="OverlayCanvas"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_gkc5d")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="OxygenText" type="RichTextLabel" parent="OverlayCanvas"]
+unique_name_in_owner = true
+material = ExtResource("4_di0rk")
+offset_left = 1656.0
+offset_top = 900.0
+offset_right = 1823.0
+offset_bottom = 1004.0
+theme_override_fonts/normal_font = ExtResource("4_ni0p8")
+theme_override_font_sizes/normal_font_size = 96
+bbcode_enabled = true
+text = "[center][color=black]x1[/color][/center]"
+fit_content = true
+
+[node name="HealthText" type="RichTextLabel" parent="OverlayCanvas"]
+unique_name_in_owner = true
+material = ExtResource("4_di0rk")
+offset_left = 1600.0
+offset_top = 82.0
+offset_right = 1800.0
+offset_bottom = 186.0
+theme_override_fonts/normal_font = ExtResource("4_ni0p8")
+theme_override_font_sizes/normal_font_size = 96
+bbcode_enabled = true
+text = "[center][color=black]x1[/color][/center]"
+fit_content = true
+
+[node name="GameArea" type="Node2D" parent="."]
+unique_name_in_owner = true
+y_sort_enabled = true
+script = ExtResource("3_k5kly")
+
+[node name="Tank" parent="GameArea" instance=ExtResource("5_leski")]
+unique_name_in_owner = true
+
+[node name="BGCanvas" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="BG" parent="BGCanvas" instance=ExtResource("2_wbc4x")]
+
+[node name="OxygenPlayer" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("8_bp7tg")
+max_polyphony = 2
+
+[node name="PurchasePlayer" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("9_vt876")
+
+[node name="WaveTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 4.0
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("11_8ilyt")
+volume_db = 4.0
+autoplay = true
+
+[connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
+[connection signal="finished" from="MusicPlayer" to="." method="_on_music_player_finished"]

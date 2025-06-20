@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfphxj0fmed83"]
+
+[ext_resource type="Texture2D" uid="uid://b8c5ujfebc0xl" path="res://units/enemy/dust/Dust.png" id="1_5fjgp"]
+[ext_resource type="Script" path="res://units/enemy/dust/dust.gd" id="1_wimxd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_13a67"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5fjgp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b730y"]
+radius = 17.2461
+
+[node name="Dust" type="CharacterBody2D"]
+script = ExtResource("1_wimxd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_13a67")
+autoplay = "default"
+frame_progress = 0.972929
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6.82122e-13, -7)
+rotation = -3.14159
+scale = Vector2(0.801828, -1.2987)
+shape = SubResource("CircleShape2D_b730y")

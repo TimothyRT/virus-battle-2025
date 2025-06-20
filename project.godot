@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Artery"
+config/version="1.0.0"
+run/main_scene="res://screens/cinema.tscn"
+config/use_hidden_project_data_directory=false
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Artery"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+run/max_fps=30
+config/icon="res://assets/cells/RBC.svg"
+config/windows_native_icon="res://RBC.ico"
+
+[autoload]
+
+CursorManager="*res://singletons/cursor_manager.gd"
+Transition="*res://screens/transition.tscn"
+CollisionTypePublisher="*res://collision_type_publisher.tscn"
+Enums="*res://singletons/enums.gd"
+Session="*res://singletons/session.tscn"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=2
+window/stretch/mode="viewport"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.18, 0.18, 0.18, 1)

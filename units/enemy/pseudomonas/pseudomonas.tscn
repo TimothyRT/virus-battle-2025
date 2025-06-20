@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://5yes13ioonki"]
+
+[ext_resource type="Script" path="res://units/enemy/pseudomonas/pseudomonas.gd" id="1_oy86b"]
+[ext_resource type="Texture2D" uid="uid://bplencxia4dca" path="res://units/enemy/pseudomonas/Pseudomonas FINAL 0.png" id="2_qvojw"]
+[ext_resource type="Texture2D" uid="uid://bwjqk2l5stc3i" path="res://units/enemy/pseudomonas/Pseudomonas FINAL 1.png" id="3_edggn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_13a67"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qvojw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_edggn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b730y"]
+radius = 17.2461
+
+[node name="Pseudomonas" type="CharacterBody2D"]
+script = ExtResource("1_oy86b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_13a67")
+autoplay = "default"
+frame_progress = 0.972929
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(17, 2)
+rotation = -3.14159
+scale = Vector2(3.96942, 1.0987)
+shape = SubResource("CircleShape2D_b730y")

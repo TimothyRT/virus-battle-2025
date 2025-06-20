@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://djejv5hbu735o"]
+
+[ext_resource type="Shader" path="res://shaders/displacement.gdshader" id="1_w2fdd"]
+
+[resource]
+shader = ExtResource("1_w2fdd")
+shader_parameter/interval = 0.5
+shader_parameter/timeDelay = 0.0
+shader_parameter/intensityX = 4.0
+shader_parameter/intensityY = 4.0
+shader_parameter/seed = 42.0

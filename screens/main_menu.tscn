@@ -1,0 +1,124 @@
+[gd_scene load_steps=14 format=3 uid="uid://d1gxn0jsl7olx"]
+
+[ext_resource type="Script" path="res://screens/main_menu.gd" id="1_ufpjd"]
+[ext_resource type="PackedScene" uid="uid://drqko7rq82jwx" path="res://ui/bg.tscn" id="2_d7lur"]
+[ext_resource type="Shader" path="res://shaders/bus.gdshader" id="3_udc5l"]
+[ext_resource type="Texture2D" uid="uid://bwjawqvikxfq8" path="res://assets/menus/Bus.png" id="4_djc5v"]
+[ext_resource type="Texture2D" uid="uid://basedv2hd5v3m" path="res://assets/menus/Logo.png" id="5_wkrfd"]
+[ext_resource type="FontFile" uid="uid://c525w18nlle0a" path="res://fonts/Basophil.ttf" id="6_v8j63"]
+[ext_resource type="Texture2D" uid="uid://c7qqli86ivavr" path="res://assets/menus/Play - Normal.png" id="7_b6pqa"]
+[ext_resource type="Texture2D" uid="uid://cmtjnadycletn" path="res://assets/menus/Play - Pressed.png" id="8_ux6yx"]
+[ext_resource type="Texture2D" uid="uid://bcbsil03prpwp" path="res://assets/menus/Play - Hover.png" id="9_g4xwd"]
+[ext_resource type="Texture2D" uid="uid://dn2nqlfsncchp" path="res://assets/menus/Smoke.png" id="10_j0rvq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vjp8h"]
+shader = ExtResource("3_udc5l")
+shader_parameter/amplitude = 0.1
+shader_parameter/frequency = 1.0
+shader_parameter/pivot = Vector2(0, 0)
+
+[sub_resource type="Curve" id="Curve_ejqlp"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.241573, 43.5165), 0.0, 0.0, 0, 0, Vector2(0.539326, 272.967), 929.512, 929.512, 0, 0, Vector2(0.994382, 296.703), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Curve" id="Curve_ankjt"]
+_data = [Vector2(0.0572519, 0.177215), 0.0, 0.0, 0, 0, Vector2(0.255725, 0.961078), 1.14052, 1.14052, 0, 0, Vector2(0.896947, 0.989715), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_ufpjd")
+
+[node name="BG" parent="." instance=ExtResource("2_d7lur")]
+unique_name_in_owner = true
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -276.0
+offset_bottom = 276.0
+grow_horizontal = 2
+grow_vertical = 2
+dragger_visibility = 1
+
+[node name="VBoxContainerBus" type="VBoxContainer" parent="HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HSplitContainer/VBoxContainerBus"]
+layout_mode = 2
+alignment = 2
+
+[node name="Bus" type="TextureRect" parent="HSplitContainer/VBoxContainerBus/HBoxContainer"]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_vjp8h")
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+texture = ExtResource("4_djc5v")
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HSplitContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Logo" type="TextureRect" parent="HSplitContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("5_wkrfd")
+stretch_mode = 4
+
+[node name="Divider" type="Control" parent="HSplitContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="HighScoreLabel" type="RichTextLabel" parent="HSplitContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("6_v8j63")
+theme_override_font_sizes/normal_font_size = 48
+text = "Skor tertinggi: X
+Skor terakhir: Y"
+fit_content = true
+
+[node name="Divider2" type="Control" parent="HSplitContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HSplitContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PlayButton" type="TextureButton" parent="HSplitContainer/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+texture_normal = ExtResource("7_b6pqa")
+texture_pressed = ExtResource("8_ux6yx")
+texture_hover = ExtResource("9_g4xwd")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+unique_name_in_owner = true
+amount = 10
+lifetime = 2.0
+texture = ExtResource("10_j0rvq")
+direction = Vector2(-1, 0)
+spread = 66.82
+gravity = Vector2(0, -100)
+initial_velocity_min = 70.69
+initial_velocity_max = 151.51
+angular_velocity_curve = SubResource("Curve_ejqlp")
+orbit_velocity_max = 0.2
+damping_min = 13.211
+damping_max = 21.292
+scale_amount_min = 1.2
+scale_amount_max = 1.6
+scale_amount_curve = SubResource("Curve_ankjt")

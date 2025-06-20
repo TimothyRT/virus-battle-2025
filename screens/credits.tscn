@@ -1,0 +1,106 @@
+[gd_scene load_steps=8 format=3 uid="uid://d3s6ccbed5jhc"]
+
+[ext_resource type="Script" path="res://screens/credits.gd" id="1_am01n"]
+[ext_resource type="PackedScene" uid="uid://drqko7rq82jwx" path="res://ui/bg.tscn" id="1_jnqgo"]
+[ext_resource type="Texture2D" uid="uid://bb3gjrqxn656" path="res://ui/Gadis.png" id="2_j7qim"]
+[ext_resource type="Material" uid="uid://djejv5hbu735o" path="res://shaders/displacement.tres" id="3_hvone"]
+[ext_resource type="FontFile" uid="uid://c525w18nlle0a" path="res://fonts/Basophil.ttf" id="4_rlro3"]
+[ext_resource type="Texture2D" uid="uid://t4v78hyp4i4b" path="res://ui/Bottom Bar.png" id="5_673do"]
+[ext_resource type="AudioStream" uid="uid://bpki12mqn1htn" path="res://sfx/happy_end.mp3" id="7_0oi6a"]
+
+[node name="Credits" type="Node"]
+script = ExtResource("1_am01n")
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="BG" parent="CanvasLayer3" instance=ExtResource("1_jnqgo")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Gadis" type="TextureRect" parent="CanvasLayer"]
+offset_left = 1307.0
+offset_top = 652.0
+offset_right = 1872.0
+offset_bottom = 1011.0
+texture = ExtResource("2_j7qim")
+
+[node name="LevelXComplete" type="RichTextLabel" parent="CanvasLayer"]
+unique_name_in_owner = true
+material = ExtResource("3_hvone")
+offset_left = 303.0
+offset_top = 145.0
+offset_right = 1458.0
+offset_bottom = 411.0
+rotation = 0.0824566
+theme_override_fonts/normal_font = ExtResource("4_rlro3")
+theme_override_font_sizes/normal_font_size = 132
+bbcode_enabled = true
+text = "[color=black]Selamat, semua kuman berhasil dikalahkan![/color]"
+fit_content = true
+
+[node name="LevelXComplete2" type="RichTextLabel" parent="CanvasLayer"]
+unique_name_in_owner = true
+material = ExtResource("3_hvone")
+offset_left = 267.0
+offset_top = 465.0
+offset_right = 1422.0
+offset_bottom = 705.0
+rotation = 0.0887081
+theme_override_fonts/normal_font = ExtResource("4_rlro3")
+theme_override_font_sizes/normal_font_size = 96
+bbcode_enabled = true
+text = "[color=black][p]~ Game by tim Melon[/p]
+[p]untuk IT Fest 2025[/p]
+[/color]"
+fit_content = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+material = ExtResource("3_hvone")
+offset_left = -374.0
+offset_top = 858.0
+offset_right = 3586.0
+offset_bottom = 1403.0
+rotation = 0.0923926
+scale = Vector2(0.527012, 0.535383)
+texture = ExtResource("5_673do")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+material = ExtResource("3_hvone")
+offset_left = 2294.0
+offset_top = 316.0
+offset_right = 6254.0
+offset_bottom = 861.0
+rotation = -3.00172
+scale = Vector2(0.527012, 0.535383)
+texture = ExtResource("5_673do")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Attribution" type="RichTextLabel" parent="CanvasLayer2"]
+unique_name_in_owner = true
+material = ExtResource("3_hvone")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -597.5
+offset_top = -162.5
+offset_right = 597.5
+offset_bottom = 162.5
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.00615884
+theme_override_fonts/normal_font = ExtResource("4_rlro3")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[color=black][p][center]All sound effect and music assets are provided royalty-free by third-party sources.[/center][/p]
+[p][/p]
+[p][center]Sound effects are provided by Pixabay, while background music is provided by Zapsplat.[/center][/p]
+[/color]"
+fit_content = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_0oi6a")

@@ -1,0 +1,83 @@
+[gd_scene load_steps=13 format=3 uid="uid://dalelvq4e5fs7"]
+
+[ext_resource type="Script" path="res://ui/player.gd" id="1_6ay43"]
+[ext_resource type="Shader" path="res://shaders/sky.gdshader" id="2_mbkiw"]
+[ext_resource type="Script" path="res://bg.gd" id="3_qbo0d"]
+[ext_resource type="Shader" path="res://shaders/cell.gdshader" id="4_ucqdu"]
+[ext_resource type="Texture2D" uid="uid://dn2nqlfsncchp" path="res://assets/menus/Smoke.png" id="5_lqkqq"]
+[ext_resource type="Shader" path="res://shaders/fade.gdshader" id="6_71j5j"]
+[ext_resource type="Texture2D" uid="uid://ctp6p0vv3cxnu" path="res://assets/cursor/Circle.png" id="7_nq70q"]
+[ext_resource type="Script" path="res://screens/circle.gd" id="8_t7xpd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uy0c8"]
+shader = ExtResource("2_mbkiw")
+shader_parameter/cloudscale = 1.1
+shader_parameter/speed = 0.01
+shader_parameter/clouddark = 0.5
+shader_parameter/cloudlight = 0.3
+shader_parameter/cloudcover = 0.2
+shader_parameter/cloudalpha = 8.0
+shader_parameter/skytint = 0.5
+shader_parameter/m = Transform2D(1.6, -1.2, 1.2, 1.6, 0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y7kr2"]
+shader = ExtResource("4_ucqdu")
+shader_parameter/amplitude = 0.2
+shader_parameter/speed = 2.0
+shader_parameter/rotation_speed = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xy5i3"]
+radius = 5.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xpjfl"]
+shader = ExtResource("6_71j5j")
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 1
+position = Vector2(0, 2)
+collision_layer = 0
+collision_mask = 65
+script = ExtResource("1_6ay43")
+
+[node name="BG" type="Sprite2D" parent="."]
+z_index = -1000
+z_as_relative = false
+material = SubResource("ShaderMaterial_uy0c8")
+script = ExtResource("3_qbo0d")
+
+[node name="Smoke" type="Sprite2D" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_y7kr2")
+texture = ExtResource("5_lqkqq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_xy5i3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CircleCharacter" type="CharacterBody2D" parent="."]
+collision_layer = 128
+collision_mask = 0
+
+[node name="CircleSkin" type="Sprite2D" parent="CircleCharacter"]
+unique_name_in_owner = true
+z_index = 1000
+z_as_relative = false
+material = SubResource("ShaderMaterial_xpjfl")
+texture = ExtResource("7_nq70q")
+script = ExtResource("8_t7xpd")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CircleCharacter"]
+polygon = PackedVector2Array(27, -152, 15, -214, -78, -187, -231, -86, -236, 90, -143, 73, -137, -53, -55, -140)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="CircleCharacter"]
+polygon = PackedVector2Array(15, -217, 194, -118, 196, 82, 88, 185, 71, 132, 133, 65, 143, -44, 89, -127, -1, -152)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="CircleCharacter"]
+polygon = PackedVector2Array(82, 132, -7, 152, -94, 121, -165, 3, -218, 56, -162, 157, 30, 203, 106, 187)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

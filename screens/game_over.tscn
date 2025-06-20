@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpj51euhpmgfa"]
+
+[ext_resource type="Script" path="res://screens/game_over.gd" id="1_bfl7d"]
+[ext_resource type="Material" uid="uid://djejv5hbu735o" path="res://shaders/displacement.tres" id="3_3n1ok"]
+[ext_resource type="FontFile" uid="uid://c525w18nlle0a" path="res://fonts/Basophil.ttf" id="4_60j7w"]
+[ext_resource type="AudioStream" uid="uid://cd6od2nib78gg" path="res://sfx/sad_trumpet.mp3" id="4_nu06t"]
+
+[node name="GameOver" type="Node"]
+script = ExtResource("1_bfl7d")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0807833, 0.0807833, 0.0807833, 1)
+
+[node name="Message" type="RichTextLabel" parent="CanvasLayer"]
+unique_name_in_owner = true
+material = ExtResource("3_3n1ok")
+offset_left = 214.0
+offset_top = 347.0
+offset_right = 1745.0
+offset_bottom = 854.0
+rotation = -0.0572765
+theme_override_fonts/normal_font = ExtResource("4_60j7w")
+theme_override_font_sizes/normal_font_size = 168
+bbcode_enabled = true
+text = "[color=white][p]Oh tidak, nyawamu habis![/p]
+[p][/p]
+[p]> Coba lagi?[/p][/color]"
+fit_content = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_nu06t")
+volume_db = 20.0

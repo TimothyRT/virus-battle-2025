@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1.3216792mm"
+   height="1.0996408mm"
+   viewBox="0 0 1.3216792 1.0996408"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="Cells.svg"
+   inkscape:export-filename="Cursor - Exclamation.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#15366e"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="16"
+     inkscape:cx="10.25"
+     inkscape:cy="8.78125"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="wbc" /><defs
+     id="defs1" /><g
+     inkscape:groupmode="layer"
+     id="rbc"
+     inkscape:label="RBC Bottom"
+     style="display:inline"
+     transform="translate(-99.404487,-112.16185)"><path
+       style="opacity:1;fill:#e90211;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:3.1;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       d="m 99.582248,112.562 c -0.10638,0.20785 -0.11752,0.41062 0.0551,0.53422 0.26265,0.18808 0.767262,-0.0694 0.932782,-0.34682 0.0994,-0.16666 0.0668,-0.31733 -0.0975,-0.42061 -0.24322,-0.15287 -0.759472,-0.0225 -0.890353,0.23321 z"
+       id="path73"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="RBC.png"
+       inkscape:export-xdpi="747.41998"
+       inkscape:export-ydpi="747.41998" /><path
+       style="opacity:1;fill:#902506;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:3.1;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       d="m 100.0257,112.83151 c 0.18053,-0.039 0.29712,-0.17607 0.31283,-0.26763 0.0157,-0.0916 -0.0697,-0.14155 -0.0697,-0.14155 0,0 0.0233,0.15667 -0.13094,0.22723 -0.228379,0.1045 -0.385843,0.023 -0.385843,0.023 0.04464,0.1622 0.162147,0.18314 0.273643,0.15887 z"
+       id="path74"
+       sodipodi:nodetypes="sccscss" /></g></svg>

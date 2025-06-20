@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://bnxwg0mm6o1ec"]
+
+[ext_resource type="Script" path="res://units/allies/tank/tank.gd" id="1_270gi"]
+[ext_resource type="Texture2D" uid="uid://claviye3kfqva" path="res://units/allies/tank/Tank0 FINAL.png" id="2_3oanx"]
+[ext_resource type="Texture2D" uid="uid://ckdylhxq47k1l" path="res://units/allies/tank/Tank1 FINAL.png" id="3_vm5ro"]
+[ext_resource type="AudioStream" uid="uid://btd11myhrfcfj" path="res://sfx/pew.mp3" id="4_ns503"]
+[ext_resource type="AudioStream" uid="uid://bx78o0nr4d3df" path="res://sfx/tank_hurt.mp3" id="5_87lxi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q6wur"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3oanx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vm5ro")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_asagw"]
+radius = 67.2681
+
+[node name="Tank" type="CharacterBody2D"]
+script = ExtResource("1_270gi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_q6wur")
+autoplay = "default"
+frame_progress = 0.596762
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-17, 15)
+shape = SubResource("CircleShape2D_asagw")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(114, -56)
+
+[node name="PewPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ns503")
+
+[node name="HurtPlayer" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_87lxi")

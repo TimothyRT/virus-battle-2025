@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://c5xud30iy0cn1"]
+
+[ext_resource type="PackedScene" uid="uid://drqko7rq82jwx" path="res://ui/bg.tscn" id="1_elk1k"]
+[ext_resource type="Script" path="res://screens/level_end.gd" id="1_vi63u"]
+[ext_resource type="Texture2D" uid="uid://t4v78hyp4i4b" path="res://ui/Bottom Bar.png" id="2_a3u7n"]
+[ext_resource type="Material" uid="uid://djejv5hbu735o" path="res://shaders/displacement.tres" id="3_24127"]
+[ext_resource type="FontFile" uid="uid://c525w18nlle0a" path="res://fonts/Basophil.ttf" id="5_r1mee"]
+[ext_resource type="AudioStream" uid="uid://bf0uxb7bhi2eo" path="res://sfx/victory.mp3" id="6_ryqt3"]
+
+[node name="LevelEnd" type="Node"]
+script = ExtResource("1_vi63u")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BG" parent="CanvasLayer" instance=ExtResource("1_elk1k")]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+material = ExtResource("3_24127")
+offset_left = -95.0
+offset_top = 995.0
+offset_right = 3865.0
+offset_bottom = 1540.0
+rotation = -0.0891963
+scale = Vector2(0.527012, 0.535383)
+texture = ExtResource("2_a3u7n")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+material = ExtResource("3_24127")
+offset_left = 2001.0
+offset_top = 147.0
+offset_right = 5961.0
+offset_bottom = 1155.0
+rotation = 3.06537
+scale = Vector2(0.527012, 0.315451)
+texture = ExtResource("2_a3u7n")
+
+[node name="LevelXComplete" type="RichTextLabel" parent="CanvasLayer"]
+unique_name_in_owner = true
+material = ExtResource("3_24127")
+offset_left = 211.0
+offset_top = 387.0
+offset_right = 1366.0
+offset_bottom = 556.0
+rotation = -0.113921
+theme_override_fonts/normal_font = ExtResource("5_r1mee")
+theme_override_font_sizes/normal_font_size = 168
+bbcode_enabled = true
+text = "[color=black]Level X tuntas![/color]"
+fit_content = true
+
+[node name="Next" type="RichTextLabel" parent="CanvasLayer"]
+unique_name_in_owner = true
+material = ExtResource("3_24127")
+offset_left = 1037.0
+offset_top = 610.0
+offset_right = 2192.0
+offset_bottom = 779.0
+rotation = 0.0862788
+theme_override_fonts/normal_font = ExtResource("5_r1mee")
+theme_override_font_sizes/normal_font_size = 120
+bbcode_enabled = true
+text = "[color=black]> LANJUT[/color]"
+fit_content = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_ryqt3")
+volume_db = 6.0

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bckqfet061wfp"]
+
+[ext_resource type="Script" path="res://wall.gd" id="1_e6aq8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cxxnq"]
+radius = 9.0365
+height = 328.804
+
+[node name="Wall" type="StaticBody2D"]
+collision_mask = 0
+script = ExtResource("1_e6aq8")
+
+[node name="ColShape Wall" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_cxxnq")
+debug_color = Color(0.12062, 0.625585, 0.477105, 0.42)

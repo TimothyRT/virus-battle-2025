@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbhy5yg2st3px"]
+
+[ext_resource type="Script" path="res://npy.gd" id="1_cboxr"]
+
+[node name="Npy" type="Node"]
+script = ExtResource("1_cboxr")

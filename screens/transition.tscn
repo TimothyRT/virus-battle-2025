@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwch01pp2fixg"]
+
+[ext_resource type="Script" path="res://screens/transition.gd" id="1_2vvqt"]
+
+[node name="Transition" type="CanvasLayer"]
+layer = 128
+script = ExtResource("1_2vvqt")
+
+[node name="BG" type="ColorRect" parent="."]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.00392157, 0.0666667, 0.101961, 1)

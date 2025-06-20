@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://jor68bo58f8l"]
+
+[ext_resource type="PackedScene" uid="uid://bckqfet061wfp" path="res://wall.tscn" id="1_1umet"]
+
+[node name="Wall Bottom" instance=ExtResource("1_1umet")]
+collision_layer = 2
+
+[node name="ColShape Wall" parent="." index="0"]
+debug_color = Color(0.80614, 0.316623, 0.687176, 0.42)

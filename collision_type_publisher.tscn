@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx2jlx7bgs2hw"]
+
+[ext_resource type="Script" path="res://collision_type_publisher.gd" id="1_4488r"]
+
+[node name="CollisionTypePublisher" type="Node"]
+script = ExtResource("1_4488r")

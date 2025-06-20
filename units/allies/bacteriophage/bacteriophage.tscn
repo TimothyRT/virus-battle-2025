@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://p1tg4dimipgk"]
+
+[ext_resource type="Script" path="res://units/allies/bacteriophage/bacteriophage.gd" id="1_eappc"]
+[ext_resource type="Texture2D" uid="uid://df4mdcv616lv0" path="res://units/allies/bacteriophage/Bacteriophage F0 FINAL.png" id="2_f70le"]
+[ext_resource type="Texture2D" uid="uid://8p8s5tinl2qg" path="res://units/allies/bacteriophage/Bacteriophage F1 FINAL.png" id="3_vgvkl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d3lvk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f70le")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vgvkl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cq1dc"]
+radius = 2.15846
+
+[node name="Bacteriophage" type="CharacterBody2D"]
+scale = Vector2(1.11943, 1.11943)
+script = ExtResource("1_eappc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_d3lvk")
+autoplay = "default"
+frame_progress = 0.0979261
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2.67994)
+scale = Vector2(8.62264, 18.2765)
+shape = SubResource("CircleShape2D_cq1dc")
+
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
