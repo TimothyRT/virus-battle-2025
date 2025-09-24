@@ -1,112 +1,112 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1750035721
-ally.tscn::PackedScene::2812213661727089763::1749567448::0::1::::<><>::res://units/allies/ally.gd
+::res://::1758696478
+ally.tscn::PackedScene::2812213661727089763::1758696187::0::1::::<><>::res://units/allies/ally.gd
 bg.gd::GDScript::-1::1748609109::0::1::::<>Sprite2D<>::
-bg.tscn::PackedScene::2334499738837669180::1749567448::0::1::::<><>::res://shaders/sky.gdshader
+bg.tscn::PackedScene::2334499738837669180::1758696187::0::1::::<><>::res://shaders/sky.gdshader
 collision_type_publisher.gd::GDScript::-1::1745239921::0::1::::<>Node<>::
 collision_type_publisher.tscn::PackedScene::8829911008306500992::1745244681::0::1::::<><>::res://collision_type_publisher.gd
 doodle_labels.gd::GDScript::-1::1745140505::0::1::::DoodleLabels<>Node2D<>::
 doodle_labels.tscn::PackedScene::4697024586875658131::1745141073::0::1::::<><>::res://doodle_labels.gd
 export_presets.cfg::TextFile::-1::1749567710::0::1::::<><>::
-game_description.txt::TextFile::-1::1749481156::0::1::::<><>::
-icon.svg::CompressedTexture2D::7397198549926882884::1744826550::1745146480::1::::<><>::
+game_description.txt::TextFile::-1::1758696163::0::1::::<><>::
+icon.svg::CompressedTexture2D::7397198549926882884::1744826550::1758696480::1::::<><>::
 main.tscn::PackedScene::8253920100779604701::1748532650::0::1::::<><>::uid://d3g1ko2dpkjgr::::res://screens/gameplay.tscn
 npy.gd::GDScript::-1::1745149662::0::1::::Npy<>Node<>::
 npy.tscn::PackedScene::7245413591720116125::1745149282::0::1::::<><>::res://npy.gd
 paint_canvas_2d.gd::GDScript::-1::1748752581::0::1::::<>CanvasLayer<>::
-paint_canvas_2d.tscn::PackedScene::5433867658927097650::1749567448::0::1::::<><>::res://paint_canvas_2d.gd<>res://texture_rect.gd<>res://sub_viewport.gd<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://brfwr5fb67t1::::res://sfx/fail.mp3<>res://store_manager.gd<>uid://cr1numidr3car::::res://ui/IconMacrophage.png<>uid://b4dsuhdrgels0::::res://ui/IconNeutrophil.png<>uid://co5ftdsss71rw::::res://ui/IconBacteriophage.png
+paint_canvas_2d.tscn::PackedScene::5433867658927097650::1758696187::0::1::::<><>::res://paint_canvas_2d.gd<>res://texture_rect.gd<>res://sub_viewport.gd<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://brfwr5fb67t1::::res://sfx/fail.mp3<>res://store_manager.gd<>uid://cr1numidr3car::::res://ui/IconMacrophage.png<>uid://b4dsuhdrgels0::::res://ui/IconNeutrophil.png<>uid://co5ftdsss71rw::::res://ui/IconBacteriophage.png
 store_manager.gd::GDScript::-1::1749513897::0::1::::<>Node<>::
 sub_viewport.gd::GDScript::-1::1749503760::0::1::::<>SubViewport<>::
 texture_rect.gd::GDScript::-1::1745190374::0::1::::<>TextureRect<>::
 wall.gd::GDScript::-1::1748013738::0::1::::Wall<>StaticBody2D<>::
 wall.tscn::PackedScene::2548422789986595505::1748013595::0::1::::<><>::res://wall.gd
 wall_bottom.tscn::PackedScene::661690165280059113::1748013596::0::1::::<><>::uid://bckqfet061wfp::::res://wall.tscn
-::res://assets/::1748526467
-::res://assets/cells/::1748526467
-Cells.svg::CompressedTexture2D::7025585096393577418::1745216351::1745216532::1::::<><>::
-RBC.png::CompressedTexture2D::1944156916356928346::1745209436::1745209355::1::::<><>::
-RBC.svg::CompressedTexture2D::7062760703975007591::1745216208::1745216213::1::::<><>::
-WBC.png::CompressedTexture2D::4398159184529644113::1745209431::1745209439::1::::<><>::
-WBC.svg::CompressedTexture2D::32913149571199233::1745216211::1745216213::1::::<><>::
-::res://assets/cursor/::1748526467
-Circle.png::CompressedTexture2D::6139305423020361178::1745235146::1745235147::1::::<><>::
-Cursor - Basic.png::CompressedTexture2D::1346729608566763417::1745207575::1745207655::1::::<><>::
-Cursor - Exclamation.png::CompressedTexture2D::5416136263157667676::1745208622::1745208626::1::::<><>::
-Cursor.svg::CompressedTexture2D::3694705854066506603::1745235143::1745235147::1::::<><>::
-::res://assets/map/::1748526467
-Map - F Bottom.png::CompressedTexture2D::1291563435718807392::1745212184::1745212201::1::::<><>::
-Map - F Top.png::CompressedTexture2D::2738620576624459147::1745212179::1745192888::1::::<><>::
-Map - Jantung F.png::CompressedTexture2D::8324100871390519310::1745212187::1745192887::1::::<><>::
-Map - O Bottom.png::CompressedTexture2D::3235681885816911021::1745212189::1745192885::1::::<><>::
-Map - O Top.png::CompressedTexture2D::4425416925725279191::1745212181::1745192885::1::::<><>::
-Map.png::CompressedTexture2D::4094418802318694518::1745045120::1745192888::1::::<><>::
-Map.svg::CompressedTexture2D::7761126293146126321::1745212170::1745212177::1::::<><>::
-::res://assets/menus/::1748526467
-Bus Bang.png::CompressedTexture2D::7241436939332706673::1745231342::1745231345::1::::<><>::
-Bus.png::CompressedTexture2D::3949194804174511341::1745223846::1745223852::1::::<><>::
-Bus.svg::CompressedTexture2D::529664708861676956::1745231343::1745231345::1::::<><>::
-Logo.png::CompressedTexture2D::2423828853642291160::1745221617::1745221688::1::::<><>::
-Logo.svg::CompressedTexture2D::5349485495373322512::1745230784::1745231054::1::::<><>::
-Play - Hover.png::CompressedTexture2D::2529970558614146287::1745225082::1745225095::1::::<><>::
-Play - Normal.png::CompressedTexture2D::7052905996070773923::1745225093::1745225095::1::::<><>::
-Play - Pressed.png::CompressedTexture2D::5654900342353362011::1745225088::1745225095::1::::<><>::
-Smoke.png::CompressedTexture2D::8128273697657945317::1745223096::1745223099::1::::<><>::
-::res://charas/::1748526467
+::res://assets/::1750436193
+::res://assets/cells/::1750436193
+Cells.svg::CompressedTexture2D::7025585096393577418::1745216351::1758696481::1::::<><>::
+RBC.png::CompressedTexture2D::1944156916356928346::1745209436::1758696481::1::::<><>::
+RBC.svg::CompressedTexture2D::7062760703975007591::1745216208::1758696481::1::::<><>::
+WBC.png::CompressedTexture2D::4398159184529644113::1745209431::1758696481::1::::<><>::
+WBC.svg::CompressedTexture2D::32913149571199233::1745216211::1758696481::1::::<><>::
+::res://assets/cursor/::1750436193
+Circle.png::CompressedTexture2D::6139305423020361178::1745235146::1758696481::1::::<><>::
+Cursor - Basic.png::CompressedTexture2D::1346729608566763417::1745207575::1758696481::1::::<><>::
+Cursor - Exclamation.png::CompressedTexture2D::5416136263157667676::1745208622::1758696481::1::::<><>::
+Cursor.svg::CompressedTexture2D::3694705854066506603::1745235143::1758696481::1::::<><>::
+::res://assets/map/::1750436193
+Map - F Bottom.png::CompressedTexture2D::1291563435718807392::1745212184::1758696489::1::::<><>::
+Map - F Top.png::CompressedTexture2D::2738620576624459147::1745212179::1758696488::1::::<><>::
+Map - Jantung F.png::CompressedTexture2D::8324100871390519310::1745212187::1758696488::1::::<><>::
+Map - O Bottom.png::CompressedTexture2D::3235681885816911021::1745212189::1758696485::1::::<><>::
+Map - O Top.png::CompressedTexture2D::4425416925725279191::1745212181::1758696485::1::::<><>::
+Map.png::CompressedTexture2D::4094418802318694518::1745045120::1758696488::1::::<><>::
+Map.svg::CompressedTexture2D::7761126293146126321::1745212170::1758696481::1::::<><>::
+::res://assets/menus/::1750436193
+Bus Bang.png::CompressedTexture2D::7241436939332706673::1745231342::1758696481::1::::<><>::
+Bus.png::CompressedTexture2D::3949194804174511341::1745223846::1758696481::1::::<><>::
+Bus.svg::CompressedTexture2D::529664708861676956::1745231343::1758696481::1::::<><>::
+Logo.png::CompressedTexture2D::2423828853642291160::1745221617::1758696481::1::::<><>::
+Logo.svg::CompressedTexture2D::5349485495373322512::1745230784::1758696481::1::::<><>::
+Play - Hover.png::CompressedTexture2D::2529970558614146287::1745225082::1758696481::1::::<><>::
+Play - Normal.png::CompressedTexture2D::7052905996070773923::1745225093::1758696481::1::::<><>::
+Play - Pressed.png::CompressedTexture2D::5654900342353362011::1745225088::1758696481::1::::<><>::
+Smoke.png::CompressedTexture2D::8128273697657945317::1745223096::1758696481::1::::<><>::
+::res://charas/::1750436193
 wbc.gd::GDScript::-1::1748012420::0::1::::<>RigidBody2D<>::
 wbc.tscn::PackedScene::42463877157837609::1748355454::0::1::::<><>::res://shaders/cell.gdshader<>res://charas/wbc.gd<>uid://b3wrblklfaq0p::::res://assets/cells/WBC.png
-::res://cinema/::1748712236
+::res://cinema/::1750436193
 vid.ogv::VideoStreamTheora::-1::1748712236::0::1::::<><>::
-::res://fonts/::1748526467
-Basophil.ttf::FontFile::6936107090327136714::1745230233::1745230233::1::::<><>::
-::res://iree/::1748526468
-::res://iree/iree/::1748526468
-::res://iree/iree/_runtime/::1748526468
-::res://iree/iree/_runtime/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/::1748526468
-::res://iree/iree/_runtime/scripts/iree_benchmark_executable/::1748526468
-::res://iree/iree/_runtime/scripts/iree_benchmark_executable/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_benchmark_module/::1748526468
-::res://iree/iree/_runtime/scripts/iree_benchmark_module/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_convert_parameters/::1748526468
-::res://iree/iree/_runtime/scripts/iree_convert_parameters/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_cpuinfo/::1748526468
-::res://iree/iree/_runtime/scripts/iree_cpuinfo/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_create_parameters/::1748526468
-::res://iree/iree/_runtime/scripts/iree_create_parameters/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_c_embed_data/::1748526468
-::res://iree/iree/_runtime/scripts/iree_c_embed_data/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_dump_module/::1748526468
-::res://iree/iree/_runtime/scripts/iree_dump_module/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_dump_parameters/::1748526468
-::res://iree/iree/_runtime/scripts/iree_dump_parameters/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_flatcc_cli/::1748526468
-::res://iree/iree/_runtime/scripts/iree_flatcc_cli/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_run_module/::1748526468
-::res://iree/iree/_runtime/scripts/iree_run_module/__pycache__/::1748526468
-::res://iree/iree/_runtime/scripts/iree_tracy_capture/::1748526468
-::res://iree/iree/_runtime/scripts/iree_tracy_capture/__pycache__/::1748526468
-::res://iree/iree/_runtime_libs/::1748526468
-::res://iree/iree/_runtime_libs/__pycache__/::1748526468
-::res://iree/iree/_runtime_libs_tracy/::1748526468
-::res://iree/iree/_runtime_libs_tracy/__pycache__/::1748526468
-::res://iree/iree/runtime/::1748526468
-::res://iree/iree/runtime/__pycache__/::1748526468
-::res://iree/iree_runtime-20241104.1068.dist-info/::1748526468
+::res://fonts/::1750436193
+Basophil.ttf::FontFile::6936107090327136714::1745230233::1758696480::1::::<><>::
+::res://iree/::1750436195
+::res://iree/iree/::1750436195
+::res://iree/iree/_runtime/::1750436195
+::res://iree/iree/_runtime/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/::1750436195
+::res://iree/iree/_runtime/scripts/iree_benchmark_executable/::1750436195
+::res://iree/iree/_runtime/scripts/iree_benchmark_executable/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_benchmark_module/::1750436195
+::res://iree/iree/_runtime/scripts/iree_benchmark_module/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_convert_parameters/::1750436195
+::res://iree/iree/_runtime/scripts/iree_convert_parameters/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_cpuinfo/::1750436195
+::res://iree/iree/_runtime/scripts/iree_cpuinfo/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_create_parameters/::1750436195
+::res://iree/iree/_runtime/scripts/iree_create_parameters/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_c_embed_data/::1750436195
+::res://iree/iree/_runtime/scripts/iree_c_embed_data/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_dump_module/::1750436195
+::res://iree/iree/_runtime/scripts/iree_dump_module/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_dump_parameters/::1750436195
+::res://iree/iree/_runtime/scripts/iree_dump_parameters/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_flatcc_cli/::1750436195
+::res://iree/iree/_runtime/scripts/iree_flatcc_cli/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_run_module/::1750436195
+::res://iree/iree/_runtime/scripts/iree_run_module/__pycache__/::1750436195
+::res://iree/iree/_runtime/scripts/iree_tracy_capture/::1750436195
+::res://iree/iree/_runtime/scripts/iree_tracy_capture/__pycache__/::1750436195
+::res://iree/iree/_runtime_libs/::1750436195
+::res://iree/iree/_runtime_libs/__pycache__/::1750436195
+::res://iree/iree/_runtime_libs_tracy/::1750436195
+::res://iree/iree/_runtime_libs_tracy/__pycache__/::1750436195
+::res://iree/iree/runtime/::1750436195
+::res://iree/iree/runtime/__pycache__/::1750436195
+::res://iree/iree_runtime-20241104.1068.dist-info/::1750436195
 entry_points.txt::TextFile::-1::1745132132::0::1::::<><>::
 top_level.txt::TextFile::-1::1745132132::0::1::::<><>::
-::res://screens/::1749567448
+::res://screens/::1758696188
 cinema.gd::GDScript::-1::1748712834::0::1::::<>CanvasLayer<>::
 cinema.tscn::PackedScene::5241450499376743818::1748764933::0::1::::<><>::res://screens/cinema.gd
 circle.gd::GDScript::-1::1745235517::0::1::::<>Sprite2D<>::
 credits.gd::GDScript::-1::1749512121::0::1::::<>Node<>::
-credits.tscn::PackedScene::9163594377659301236::1749567448::0::1::::<><>::res://screens/credits.gd<>uid://drqko7rq82jwx::::res://ui/bg.tscn<>uid://bb3gjrqxn656::::res://ui/Gadis.png<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://t4v78hyp4i4b::::res://ui/Bottom Bar.png<>uid://bpki12mqn1htn::::res://sfx/happy_end.mp3
+credits.tscn::PackedScene::9163594377659301236::1758696188::0::1::::<><>::res://screens/credits.gd<>uid://drqko7rq82jwx::::res://ui/bg.tscn<>uid://bb3gjrqxn656::::res://ui/Gadis.png<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://t4v78hyp4i4b::::res://ui/Bottom Bar.png<>uid://bpki12mqn1htn::::res://sfx/happy_end.mp3
 gameplay.gd::GDScript::-1::1749567447::0::1::::Gameplay<>Node<>::
-gameplay.tscn::PackedScene::9138533216412921825::1749567447::0::1::::<><>::res://screens/gameplay.gd<>uid://bsqimy60ljc0m::::res://ui/gameplay overlay.png<>uid://drqko7rq82jwx::::res://ui/bg.tscn<>res://screens/game_area.gd<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://bnxwg0mm6o1ec::::res://units/allies/tank/tank.tscn<>uid://cjohahpkb5m87::::res://paint_canvas_2d.tscn<>uid://cp2bsdfgoqbaq::::res://sfx/oxy.mp3<>uid://dex3127re2jp6::::res://sfx/purchase.mp3<>uid://o8y80vm8cqso::::res://sfx/snd_bgm.mp3
+gameplay.tscn::PackedScene::9138533216412921825::1758696186::0::1::::<><>::res://screens/gameplay.gd<>uid://bsqimy60ljc0m::::res://ui/gameplay overlay.png<>uid://drqko7rq82jwx::::res://ui/bg.tscn<>res://screens/game_area.gd<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://bnxwg0mm6o1ec::::res://units/allies/tank/tank.tscn<>uid://cjohahpkb5m87::::res://paint_canvas_2d.tscn<>uid://cp2bsdfgoqbaq::::res://sfx/oxy.mp3<>uid://dex3127re2jp6::::res://sfx/purchase.mp3<>uid://o8y80vm8cqso::::res://sfx/snd_bgm.mp3
 game_area.gd::GDScript::-1::1748609110::0::1::::<>Node2D<>::
 game_over.gd::GDScript::-1::1749512404::0::1::::<>Node<>::
-game_over.tscn::PackedScene::3459700919802706674::1749567448::0::1::::<><>::res://screens/game_over.gd<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://cd6od2nib78gg::::res://sfx/sad_trumpet.mp3
+game_over.tscn::PackedScene::3459700919802706674::1758696188::0::1::::<><>::res://screens/game_over.gd<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://cd6od2nib78gg::::res://sfx/sad_trumpet.mp3
 level_end.gd::GDScript::-1::1749512163::0::1::::<>Node<>::
-level_end.tscn::PackedScene::6927208571778047716::1749567448::0::1::::<><>::uid://drqko7rq82jwx::::res://ui/bg.tscn<>res://screens/level_end.gd<>uid://t4v78hyp4i4b::::res://ui/Bottom Bar.png<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://bf0uxb7bhi2eo::::res://sfx/victory.mp3
+level_end.tscn::PackedScene::6927208571778047716::1758696188::0::1::::<><>::uid://drqko7rq82jwx::::res://ui/bg.tscn<>res://screens/level_end.gd<>uid://t4v78hyp4i4b::::res://ui/Bottom Bar.png<>uid://djejv5hbu735o::::res://shaders/displacement.tres<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://bf0uxb7bhi2eo::::res://sfx/victory.mp3
 main_menu.gd::GDScript::-1::1745234523::0::1::::<>CanvasLayer<>::
 main_menu.tscn::PackedScene::8997979286167701109::1748532650::0::1::::<><>::res://screens/main_menu.gd<>uid://drqko7rq82jwx::::res://ui/bg.tscn<>res://shaders/bus.gdshader<>uid://bwjawqvikxfq8::::res://assets/menus/Bus.png<>uid://basedv2hd5v3m::::res://assets/menus/Logo.png<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf<>uid://c7qqli86ivavr::::res://assets/menus/Play - Normal.png<>uid://cmtjnadycletn::::res://assets/menus/Play - Pressed.png<>uid://bcbsil03prpwp::::res://assets/menus/Play - Hover.png<>uid://dn2nqlfsncchp::::res://assets/menus/Smoke.png
 map.tscn::PackedScene::8155913633019856224::1748532650::0::1::::<><>::uid://dalelvq4e5fs7::::res://ui/player.tscn<>res://shaders/noise.gdshader<>uid://bfauxe8mgwafr::::res://assets/map/Map - F Top.png<>uid://b4bx78s7ehe3x::::res://assets/map/Map - O Top.png<>uid://snv4joe5wacm::::res://assets/map/Map - F Bottom.png<>uid://dquiywkxoev4a::::res://assets/map/Map - Jantung F.png<>res://screens/portal_kiri_atas.gd<>uid://bmdnhcmdp6r6d::::res://assets/map/Map - O Bottom.png<>uid://bckqfet061wfp::::res://wall.tscn<>res://screens/portal_kanan_atas.gd<>uid://jor68bo58f8l::::res://wall_bottom.tscn<>res://screens/portal_kiri_bawah.gd<>res://screens/portal_kanan_bawah.gd<>uid://utmyf54y5qb::::res://charas/wbc.tscn
@@ -121,172 +121,173 @@ transition.gd::GDScript::-1::1745237444::0::1::::<>CanvasLayer<>::
 transition.tscn::PackedScene::6321595736225010732::1748532651::0::1::::<><>::res://screens/transition.gd
 tutorial.gd::GDScript::-1::1748714151::0::1::::<>CanvasLayer<>::
 tutorial.tscn::PackedScene::1343386900260521280::1748764933::0::1::::<><>::res://screens/tutorial.gd<>uid://7jdopaxyyh6g::::res://ui/mockup.png<>uid://c525w18nlle0a::::res://fonts/Basophil.ttf
-::res://sfx/::1749566404
+::res://sfx/::1750436195
 attribution.txt::TextFile::-1::1749566404::0::1::::<><>::
-car_crash.mp3::AudioStreamMP3::2935295887121582687::1745233533::1745233583::1::::<><>::
-Daylight Rising.wav::AudioStreamWAV::6150350012868187190::1698866525::1749512655::1::::<><>::
-fail.mp3::AudioStreamMP3::105627077357643080::1748747669::1748747671::1::::<><>::
-happy_end.mp3::AudioStreamMP3::3460430719801320271::1749512354::1749512358::1::::<><>::
-oxy.mp3::AudioStreamMP3::5881505248185380212::1748749018::1748749020::1::::<><>::
-pew.mp3::AudioStreamMP3::3727827586227823443::1748716931::1748716933::1::::<><>::
-purchase.mp3::AudioStreamMP3::7489246088756810745::1748752831::1748752836::1::::<><>::
-sad_trumpet.mp3::AudioStreamMP3::5048260442535624614::1749511483::1749511486::1::::<><>::
-snd_bgm.mp3::AudioStreamMP3::1052285761955750930::1745845518::1749513039::1::::<><>::
-tank_hurt.mp3::AudioStreamMP3::4068854171351237923::1748753026::1748753029::1::::<><>::
-victory.mp3::AudioStreamMP3::2790229860862126290::1749511390::1749511486::1::::<><>::
-::res://shaders/::1749567742
-bus.gdshader::Shader::-1::1749567742::0::1::::<><>::
-cell.gdshader::Shader::-1::1749567742::0::1::::<><>::
-displacement.gdshader::Shader::-1::1749567742::0::1::::<><>::
-displacement.tres::ShaderMaterial::7799804696032323226::1749566404::0::1::::<><>::res://shaders/displacement.gdshader
-fade.gdshader::Shader::-1::1749567742::0::1::::<><>::
-noise.gdshader::Shader::-1::1749567742::0::1::::<><>::
-sky.gdshader::Shader::-1::1749567742::0::1::::<><>::
-::res://singletons/::1749514283
+car_crash.mp3::AudioStreamMP3::2935295887121582687::1745233533::1758696480::1::::<><>::
+Daylight Rising.wav::AudioStreamWAV::6150350012868187190::1698866525::1758696489::1::::<><>::
+fail.mp3::AudioStreamMP3::105627077357643080::1748747669::1758696480::1::::<><>::
+happy_end.mp3::AudioStreamMP3::3460430719801320271::1749512354::1758696480::1::::<><>::
+oxy.mp3::AudioStreamMP3::5881505248185380212::1748749018::1758696480::1::::<><>::
+pew.mp3::AudioStreamMP3::3727827586227823443::1748716931::1758696480::1::::<><>::
+purchase.mp3::AudioStreamMP3::7489246088756810745::1748752831::1758696480::1::::<><>::
+sad_trumpet.mp3::AudioStreamMP3::5048260442535624614::1749511483::1758696480::1::::<><>::
+snd_bgm.mp3::AudioStreamMP3::1052285761955750930::1745845518::1758696480::1::::<><>::
+tank_hurt.mp3::AudioStreamMP3::4068854171351237923::1748753026::1758696480::1::::<><>::
+victory.mp3::AudioStreamMP3::2790229860862126290::1749511390::1758696480::1::::<><>::
+::res://shaders/::1758696414
+bus.gdshader::Shader::-1::1758696414::0::1::::<><>::
+cell.gdshader::Shader::-1::1758696414::0::1::::<><>::
+displacement.gdshader::Shader::-1::1758696414::0::1::::<><>::
+displacement.tres::ShaderMaterial::7799804696032323226::1758696186::0::1::::<><>::res://shaders/displacement.gdshader
+fade.gdshader::Shader::-1::1758696414::0::1::::<><>::
+noise.gdshader::Shader::-1::1758696414::0::1::::<><>::
+sky.gdshader::Shader::-1::1758696414::0::1::::<><>::
+::res://singletons/::1758696163
 cursor_manager.gd::GDScript::-1::1749502252::0::1::::<>Node<>::
 enums.gd::GDScript::-1::1748529619::0::1::::<>Node<>::
 session.gd::GDScript::-1::1749514283::0::1::::<>Node<>::
 session.tscn::PackedScene::30754505706471007::1748713851::0::1::::<><>::res://singletons/session.gd
-::res://ui/::1749509361
-arrow.png::CompressedTexture2D::6190784711681694748::1749024131::1749024949::1::::<><>::
-arrow.svg::CompressedTexture2D::1765690140667811895::1749024147::1749024949::1::::<><>::
+::res://singletons/uuid/::1758696163
+::res://ui/::1750436195
+arrow.png::CompressedTexture2D::6190784711681694748::1749024131::1758696481::1::::<><>::
+arrow.svg::CompressedTexture2D::1765690140667811895::1749024147::1758696481::1::::<><>::
 bg.tscn::PackedScene::8386136315814161231::1748713850::0::1::::<><>::res://shaders/sky.gdshader
-Bottom Bar.png::CompressedTexture2D::1394788931439232147::1749021430::1749022319::1::::<><>::
-Canvas Frame.png::CompressedTexture2D::4908398498258680673::1749021437::1749022319::1::::<><>::
-Circle.png::CompressedTexture2D::2353744625204064251::1749021482::1749022319::1::::<><>::
-Divider.png::CompressedTexture2D::7485424670465764441::1749021494::1749022319::1::::<><>::
-Gadis.png::CompressedTexture2D::73964511683059247::1719291397::1749509361::1::::<><>::
-gameplay overlay.png::CompressedTexture2D::3683358388311913406::1748748581::1749020873::1::::<><>::
-gameplay overlay.svg::CompressedTexture2D::2774315563171924923::1749021484::1749022320::1::::<><>::
-gameplay.svg::CompressedTexture2D::1160077685772142161::1748602007::1749020872::1::::<><>::
-IconBacteriophage.png::CompressedTexture2D::5817754212208184096::1748751347::1749020872::1::::<><>::
-IconMacrophage.png::CompressedTexture2D::6020551210421132649::1748750916::1749020872::1::::<><>::
-IconNeutrophil.png::CompressedTexture2D::4429219277284568841::1748751335::1749020872::1::::<><>::
-logo.png::CompressedTexture2D::4187268951888431329::1749020732::1749020872::1::::<><>::
-logo.svg::CompressedTexture2D::1419259251464849819::1749020777::1749020872::1::::<><>::
-Misshapen Rectangle.png::CompressedTexture2D::790120407919593438::1749021467::1749022319::1::::<><>::
-mockup.png::CompressedTexture2D::2264830337224833632::1748712973::1749020873::1::::<><>::
-mockup.svg::CompressedTexture2D::8665900032548053635::1749022027::1749022320::1::::<><>::
+Bottom Bar.png::CompressedTexture2D::1394788931439232147::1749021430::1758696481::1::::<><>::
+Canvas Frame.png::CompressedTexture2D::4908398498258680673::1749021437::1758696483::1::::<><>::
+Circle.png::CompressedTexture2D::2353744625204064251::1749021482::1758696483::1::::<><>::
+Divider.png::CompressedTexture2D::7485424670465764441::1749021494::1758696483::1::::<><>::
+Gadis.png::CompressedTexture2D::73964511683059247::1719291397::1758696483::1::::<><>::
+gameplay overlay.png::CompressedTexture2D::3683358388311913406::1748748581::1758696484::1::::<><>::
+gameplay overlay.svg::CompressedTexture2D::2774315563171924923::1749021484::1758696483::1::::<><>::
+gameplay.svg::CompressedTexture2D::1160077685772142161::1748602007::1758696483::1::::<><>::
+IconBacteriophage.png::CompressedTexture2D::5817754212208184096::1748751347::1758696482::1::::<><>::
+IconMacrophage.png::CompressedTexture2D::6020551210421132649::1748750916::1758696482::1::::<><>::
+IconNeutrophil.png::CompressedTexture2D::4429219277284568841::1748751335::1758696482::1::::<><>::
+logo.png::CompressedTexture2D::4187268951888431329::1749020732::1758696482::1::::<><>::
+logo.svg::CompressedTexture2D::1419259251464849819::1749020777::1758696482::1::::<><>::
+Misshapen Rectangle.png::CompressedTexture2D::790120407919593438::1749021467::1758696482::1::::<><>::
+mockup.png::CompressedTexture2D::2264830337224833632::1748712973::1758696483::1::::<><>::
+mockup.svg::CompressedTexture2D::8665900032548053635::1749022027::1758696483::1::::<><>::
 player.gd::GDScript::-1::1748014781::0::1::::Player<>CharacterBody2D<>::
 player.tscn::PackedScene::7182233847109362280::1748532650::0::1::::<><>::res://ui/player.gd<>res://shaders/sky.gdshader<>res://bg.gd<>res://shaders/cell.gdshader<>uid://dn2nqlfsncchp::::res://assets/menus/Smoke.png<>res://shaders/fade.gdshader<>uid://ctp6p0vv3cxnu::::res://assets/cursor/Circle.png<>res://screens/circle.gd
-Polygon.png::CompressedTexture2D::6760494770511112231::1749021448::1749022319::1::::<><>::
-submit.png::CompressedTexture2D::6917906292569365302::1748714516::1749020872::1::::<><>::
-Tutorial1.png::CompressedTexture2D::5746168226134871916::1749021516::1749022319::1::::<><>::
-Tutorial2.png::CompressedTexture2D::2421738132246348054::1749021561::1749022319::1::::<><>::
-Tutorial3.png::CompressedTexture2D::1362446296309071668::1749021555::1749022319::1::::<><>::
-::res://units/::1749567742
-hurt.gdshader::Shader::-1::1749567742::0::1::::<><>::
+Polygon.png::CompressedTexture2D::6760494770511112231::1749021448::1758696482::1::::<><>::
+submit.png::CompressedTexture2D::6917906292569365302::1748714516::1758696482::1::::<><>::
+Tutorial1.png::CompressedTexture2D::5746168226134871916::1749021516::1758696482::1::::<><>::
+Tutorial2.png::CompressedTexture2D::2421738132246348054::1749021561::1758696482::1::::<><>::
+Tutorial3.png::CompressedTexture2D::1362446296309071668::1749021555::1758696482::1::::<><>::
+::res://units/::1758696414
+hurt.gdshader::Shader::-1::1758696414::0::1::::<><>::
 unit.gd::GDScript::-1::1749505675::0::1::::Unit<>CharacterBody2D<>::
-::res://units/allies/::1749505398
+::res://units/allies/::1750436195
 ally.gd::GDScript::-1::1749505398::0::1::::Ally<>Unit<>::
-::res://units/allies/bacteriophage/::1749567448
-Bacteriophage F0 FINAL.png::CompressedTexture2D::7570807324364178631::1725028571::1748600583::1::::<><>::
-Bacteriophage F1 FINAL.png::CompressedTexture2D::2349234916850654842::1725028580::1748600583::1::::<><>::
-Bacteriophage Projectile.png::CompressedTexture2D::351300294576127292::1725028998::1748600583::1::::<><>::
+::res://units/allies/bacteriophage/::1758696187
+Bacteriophage F0 FINAL.png::CompressedTexture2D::7570807324364178631::1725028571::1758696482::1::::<><>::
+Bacteriophage F1 FINAL.png::CompressedTexture2D::2349234916850654842::1725028580::1758696482::1::::<><>::
+Bacteriophage Projectile.png::CompressedTexture2D::351300294576127292::1725028998::1758696481::1::::<><>::
 bacteriophage.gd::GDScript::-1::1749502191::0::1::::Bacteriophage<>Ally<>::
-bacteriophage.tscn::PackedScene::1107672341993450962::1749567448::0::1::::<><>::res://units/allies/bacteriophage/bacteriophage.gd<>uid://df4mdcv616lv0::::res://units/allies/bacteriophage/Bacteriophage F0 FINAL.png<>uid://8p8s5tinl2qg::::res://units/allies/bacteriophage/Bacteriophage F1 FINAL.png
-::res://units/allies/basophil/::1748600583
-Basophil FINAL 0.png::CompressedTexture2D::192432117040947844::1718350838::1748600583::1::::<><>::
-Basophil FINAL 1.png::CompressedTexture2D::298036005462626178::1718350877::1748600583::1::::<><>::
-Basophil FINAL 2.png::CompressedTexture2D::4528713064784641813::1718350865::1748600583::1::::<><>::
-Basophil FINAL 3.png::CompressedTexture2D::8413141968414920476::1718350856::1748600583::1::::<><>::
-::res://units/allies/macrophage/::1748870218
-Macrophage FINAL 0.png::CompressedTexture2D::3399624549277925669::1718350611::1748528569::1::::<><>::
-Macrophage FINAL 1.png::CompressedTexture2D::8831711236559223170::1718350616::1748528569::1::::<><>::
-Macrophage FINAL 2.png::CompressedTexture2D::4630359633000436597::1718350626::1748528569::1::::<><>::
-Macrophage FINAL 3.png::CompressedTexture2D::9066184511956680341::1718350639::1748528569::1::::<><>::
-Macrophage FINAL 4.png::CompressedTexture2D::1487720869403968379::1718350652::1748528569::1::::<><>::
-Macrophage FINAL 5.png::CompressedTexture2D::3139948048223305736::1718350611::1748528569::1::::<><>::
-Macrophage FINAL 6.png::CompressedTexture2D::6333626472806739700::1718350720::1748528569::1::::<><>::
-Macrophage FINAL 7.png::CompressedTexture2D::5067605892298707401::1718350738::1748528569::1::::<><>::
-Macrophage FINAL 8.png::CompressedTexture2D::4960860033782014595::1718350760::1748528569::1::::<><>::
+bacteriophage.tscn::PackedScene::1107672341993450962::1758696187::0::1::::<><>::res://units/allies/bacteriophage/bacteriophage.gd<>uid://df4mdcv616lv0::::res://units/allies/bacteriophage/Bacteriophage F0 FINAL.png<>uid://8p8s5tinl2qg::::res://units/allies/bacteriophage/Bacteriophage F1 FINAL.png
+::res://units/allies/basophil/::1750436195
+Basophil FINAL 0.png::CompressedTexture2D::192432117040947844::1718350838::1758696481::1::::<><>::
+Basophil FINAL 1.png::CompressedTexture2D::298036005462626178::1718350877::1758696481::1::::<><>::
+Basophil FINAL 2.png::CompressedTexture2D::4528713064784641813::1718350865::1758696481::1::::<><>::
+Basophil FINAL 3.png::CompressedTexture2D::8413141968414920476::1718350856::1758696481::1::::<><>::
+::res://units/allies/macrophage/::1750436195
+Macrophage FINAL 0.png::CompressedTexture2D::3399624549277925669::1718350611::1758696481::1::::<><>::
+Macrophage FINAL 1.png::CompressedTexture2D::8831711236559223170::1718350616::1758696481::1::::<><>::
+Macrophage FINAL 2.png::CompressedTexture2D::4630359633000436597::1718350626::1758696480::1::::<><>::
+Macrophage FINAL 3.png::CompressedTexture2D::9066184511956680341::1718350639::1758696480::1::::<><>::
+Macrophage FINAL 4.png::CompressedTexture2D::1487720869403968379::1718350652::1758696480::1::::<><>::
+Macrophage FINAL 5.png::CompressedTexture2D::3139948048223305736::1718350611::1758696480::1::::<><>::
+Macrophage FINAL 6.png::CompressedTexture2D::6333626472806739700::1718350720::1758696480::1::::<><>::
+Macrophage FINAL 7.png::CompressedTexture2D::5067605892298707401::1718350738::1758696480::1::::<><>::
+Macrophage FINAL 8.png::CompressedTexture2D::4960860033782014595::1718350760::1758696480::1::::<><>::
 macrophage.gd::GDScript::-1::1748763534::0::1::::Macrophage<>Ally<>::
 macrophage.tscn::PackedScene::8470286602297538375::1748870218::0::1::::<><>::res://units/allies/macrophage/macrophage.gd<>uid://boo2k4q7c4rkf::::res://units/allies/macrophage/Macrophage FINAL 0.png<>uid://dx3e8103quaqc::::res://units/allies/macrophage/Macrophage FINAL 1.png<>uid://b678l1y15i6p2::::res://units/allies/macrophage/Macrophage FINAL 2.png<>uid://d2fyy7468ypv6::::res://units/allies/macrophage/Macrophage FINAL 3.png<>uid://vgwsso3wp4qp::::res://units/allies/macrophage/Macrophage FINAL 4.png<>uid://bk0aqrmdsx8ga::::res://units/allies/macrophage/Macrophage FINAL 5.png<>uid://cwib5xp4k8w17::::res://units/allies/macrophage/Macrophage FINAL 6.png<>uid://ceg1y1lifgp3v::::res://units/allies/macrophage/Macrophage FINAL 7.png<>uid://ccxcv02hfqe88::::res://units/allies/macrophage/Macrophage FINAL 8.png
-::res://units/allies/neutrophil/::1749508368
-Neutrophil FINAL 0.png::CompressedTexture2D::2523385432008351321::1718199020::1748600583::1::::<><>::
-Neutrophil FINAL 1.png::CompressedTexture2D::418311625975015706::1718199034::1748600583::1::::<><>::
-Neutrophil FINAL 2.png::CompressedTexture2D::7167372996367637960::1718199045::1748600583::1::::<><>::
-Neutrophil FINAL 3.png::CompressedTexture2D::574148783651814031::1718199085::1748600583::1::::<><>::
-Neutrophil FINAL 4.png::CompressedTexture2D::5836229017336752949::1718342603::1748600583::1::::<><>::
-Neutrophil FINAL 5.png::CompressedTexture2D::5281087230980777660::1718342609::1748600583::1::::<><>::
-Neutrophil FINAL 6.png::CompressedTexture2D::4678415045129841720::1718342619::1748600583::1::::<><>::
-Neutrophil FINAL 7.png::CompressedTexture2D::3137786919241743056::1718342629::1748600583::1::::<><>::
-Neutrophil FINAL 8.png::CompressedTexture2D::2485638361730962699::1718342643::1748600583::1::::<><>::
-Neutrophil FINAL 9.png::CompressedTexture2D::2022569312264185021::1718342654::1748600583::1::::<><>::
-Neutrophil FINAL 10.png::CompressedTexture2D::10521266649660298::1718342669::1748600583::1::::<><>::
-Neutrophil FINAL 11.png::CompressedTexture2D::8202002254632151864::1718342679::1748600583::1::::<><>::
-Neutrophil FINAL 12.png::CompressedTexture2D::8857880168585864665::1718342698::1748600583::1::::<><>::
-Neutrophil FINAL 13.png::CompressedTexture2D::2413610790087299586::1718342709::1748600583::1::::<><>::
-Neutrophil FINAL 14.png::CompressedTexture2D::7421494071160413047::1718342744::1748600583::1::::<><>::
-Neutrophil FINAL 15.png::CompressedTexture2D::3479104130286360885::1718342774::1748600583::1::::<><>::
-Neutrophil Trap.png::CompressedTexture2D::6916480023942375534::1718349017::1748600583::1::::<><>::
+::res://units/allies/neutrophil/::1750436195
+Neutrophil FINAL 0.png::CompressedTexture2D::2523385432008351321::1718199020::1758696480::1::::<><>::
+Neutrophil FINAL 1.png::CompressedTexture2D::418311625975015706::1718199034::1758696480::1::::<><>::
+Neutrophil FINAL 2.png::CompressedTexture2D::7167372996367637960::1718199045::1758696480::1::::<><>::
+Neutrophil FINAL 3.png::CompressedTexture2D::574148783651814031::1718199085::1758696480::1::::<><>::
+Neutrophil FINAL 4.png::CompressedTexture2D::5836229017336752949::1718342603::1758696480::1::::<><>::
+Neutrophil FINAL 5.png::CompressedTexture2D::5281087230980777660::1718342609::1758696480::1::::<><>::
+Neutrophil FINAL 6.png::CompressedTexture2D::4678415045129841720::1718342619::1758696480::1::::<><>::
+Neutrophil FINAL 7.png::CompressedTexture2D::3137786919241743056::1718342629::1758696480::1::::<><>::
+Neutrophil FINAL 8.png::CompressedTexture2D::2485638361730962699::1718342643::1758696480::1::::<><>::
+Neutrophil FINAL 9.png::CompressedTexture2D::2022569312264185021::1718342654::1758696480::1::::<><>::
+Neutrophil FINAL 10.png::CompressedTexture2D::10521266649660298::1718342669::1758696480::1::::<><>::
+Neutrophil FINAL 11.png::CompressedTexture2D::8202002254632151864::1718342679::1758696480::1::::<><>::
+Neutrophil FINAL 12.png::CompressedTexture2D::8857880168585864665::1718342698::1758696480::1::::<><>::
+Neutrophil FINAL 13.png::CompressedTexture2D::2413610790087299586::1718342709::1758696480::1::::<><>::
+Neutrophil FINAL 14.png::CompressedTexture2D::7421494071160413047::1718342744::1758696480::1::::<><>::
+Neutrophil FINAL 15.png::CompressedTexture2D::3479104130286360885::1718342774::1758696480::1::::<><>::
+Neutrophil Trap.png::CompressedTexture2D::6916480023942375534::1718349017::1758696480::1::::<><>::
 neutrophil.gd::GDScript::-1::1748764933::0::1::::Neutrophil<>Ally<>::
 neutrophil.tscn::PackedScene::3490113157652341552::1748790386::0::1::::<><>::res://units/allies/neutrophil/neutrophil.gd<>uid://bb7l13sls6a4h::::res://units/allies/neutrophil/Neutrophil FINAL 0.png<>uid://f7vsciypxtiw::::res://units/allies/neutrophil/Neutrophil FINAL 1.png<>uid://dad6t6ro8mfca::::res://units/allies/neutrophil/Neutrophil FINAL 2.png<>uid://igee8pjsxli2::::res://units/allies/neutrophil/Neutrophil FINAL 3.png<>uid://cpfd3sffw6i0l::::res://units/allies/neutrophil/Neutrophil FINAL 4.png<>uid://chigy82ck1u81::::res://units/allies/neutrophil/Neutrophil FINAL 5.png<>uid://b7wi2u8nmo07e::::res://units/allies/neutrophil/Neutrophil FINAL 6.png<>uid://bkx75lka0ytfk::::res://units/allies/neutrophil/Neutrophil FINAL 7.png<>uid://bbocdomnpmk40::::res://units/allies/neutrophil/Neutrophil FINAL 8.png<>uid://320ok02tb6kv::::res://units/allies/neutrophil/Neutrophil FINAL 9.png<>uid://fdjv8rk65p3::::res://units/allies/neutrophil/Neutrophil FINAL 10.png<>uid://do4d1qkg34ql1::::res://units/allies/neutrophil/Neutrophil FINAL 11.png<>uid://dyg280am2uuq0::::res://units/allies/neutrophil/Neutrophil FINAL 12.png<>uid://banf21srevawo::::res://units/allies/neutrophil/Neutrophil FINAL 13.png<>uid://dd0a6nb432d08::::res://units/allies/neutrophil/Neutrophil FINAL 14.png<>uid://bptklpisgmemn::::res://units/allies/neutrophil/Neutrophil FINAL 15.png
 neutrophil_proj.gd::GDScript::-1::1749508368::0::1::::NeutrophilProj<>CharacterBody2D<>::
 neutrophil_proj.tscn::PackedScene::1224143988628357452::1748790386::0::1::::<><>::res://units/allies/neutrophil/neutrophil_proj.gd<>uid://c5snoekgftgug::::res://units/allies/neutrophil/Neutrophil Trap.png
-::res://units/allies/tank/::1749567449
-Gadis.png::CompressedTexture2D::2508199387809300875::1749509364::1749509364::1::::<><>::
-Tank0 FINAL.png::CompressedTexture2D::5546209258629285330::1748616291::1748616298::1::::<><>::
-Tank1 FINAL.png::CompressedTexture2D::5482400192548997559::1748616277::1748616298::1::::<><>::
-Tank proj.png::CompressedTexture2D::1986831744491886612::1719453919::1748600583::1::::<><>::
+::res://units/allies/tank/::1758696188
+Gadis.png::CompressedTexture2D::2508199387809300875::1749509364::1758696480::1::::<><>::
+Tank0 FINAL.png::CompressedTexture2D::5546209258629285330::1748616291::1758696480::1::::<><>::
+Tank1 FINAL.png::CompressedTexture2D::5482400192548997559::1748616277::1758696480::1::::<><>::
+Tank proj.png::CompressedTexture2D::1986831744491886612::1719453919::1758696480::1::::<><>::
 tank.gd::GDScript::-1::1749510493::0::1::::Tank<>Ally<>::
-tank.tscn::PackedScene::3347704160143827026::1749567448::0::1::::<><>::res://units/allies/tank/tank.gd<>uid://claviye3kfqva::::res://units/allies/tank/Tank0 FINAL.png<>uid://ckdylhxq47k1l::::res://units/allies/tank/Tank1 FINAL.png<>uid://btd11myhrfcfj::::res://sfx/pew.mp3<>uid://bx78o0nr4d3df::::res://sfx/tank_hurt.mp3
+tank.tscn::PackedScene::3347704160143827026::1758696187::0::1::::<><>::res://units/allies/tank/tank.gd<>uid://claviye3kfqva::::res://units/allies/tank/Tank0 FINAL.png<>uid://ckdylhxq47k1l::::res://units/allies/tank/Tank1 FINAL.png<>uid://btd11myhrfcfj::::res://sfx/pew.mp3<>uid://bx78o0nr4d3df::::res://sfx/tank_hurt.mp3
 tank_proj.gd::GDScript::-1::1749567383::0::1::::TankProj<>CharacterBody2D<>::
-tank_proj.tscn::PackedScene::5787221447916820652::1749567449::0::1::::<><>::res://units/allies/tank/tank_proj.gd<>uid://3ko3f2n523lw::::res://units/allies/tank/Tank proj.png
-::res://units/enemy/::1749505819
+tank_proj.tscn::PackedScene::5787221447916820652::1758696188::0::1::::<><>::res://units/allies/tank/tank_proj.gd<>uid://3ko3f2n523lw::::res://units/allies/tank/Tank proj.png
+::res://units/enemy/::1750436196
 enemy.gd::GDScript::-1::1749505819::0::1::::Enemy<>Unit<>::
-::res://units/enemy/aspergillus/::1749505939
-Asp FINAL 0.png::CompressedTexture2D::267852611427693958::1717768716::1748600583::1::::<><>::
-Asp FINAL 1.png::CompressedTexture2D::1142098740697890122::1717768769::1748600583::1::::<><>::
-Asp FINAL 2.png::CompressedTexture2D::8517421360994296571::1717768809::1748600583::1::::<><>::
-Asp FINAL 3.png::CompressedTexture2D::2471653584613878170::1717768818::1748600583::1::::<><>::
+::res://units/enemy/aspergillus/::1750436196
+Asp FINAL 0.png::CompressedTexture2D::267852611427693958::1717768716::1758696481::1::::<><>::
+Asp FINAL 1.png::CompressedTexture2D::1142098740697890122::1717768769::1758696481::1::::<><>::
+Asp FINAL 2.png::CompressedTexture2D::8517421360994296571::1717768809::1758696481::1::::<><>::
+Asp FINAL 3.png::CompressedTexture2D::2471653584613878170::1717768818::1758696481::1::::<><>::
 aspergillus.gd::GDScript::-1::1749505939::0::1::::Aspergillus<>Enemy<>::
 aspergillus.tscn::PackedScene::2234677308822524552::1748870219::0::1::::<><>::res://units/enemy/aspergillus/aspergillus.gd<>uid://d20q1lwys2pm::::res://units/enemy/aspergillus/Asp FINAL 0.png<>uid://qjig1rc3fib7::::res://units/enemy/aspergillus/Asp FINAL 1.png<>uid://dtl5xklfbbj0n::::res://units/enemy/aspergillus/Asp FINAL 2.png<>uid://bbhj1kcyky4f3::::res://units/enemy/aspergillus/Asp FINAL 3.png
-::res://units/enemy/dirt/::1749505968
+::res://units/enemy/dirt/::1750436196
 dirt.gd::GDScript::-1::1749505968::0::1::::Dirt<>Enemy<>::
-Dirt.png::CompressedTexture2D::5464835733240812273::1717766009::1748600583::1::::<><>::
+Dirt.png::CompressedTexture2D::5464835733240812273::1717766009::1758696481::1::::<><>::
 dirt.tscn::PackedScene::288734876092409249::1748870218::0::1::::<><>::res://units/enemy/dirt/dirt.gd<>uid://cj4hbtkcoa8nt::::res://units/enemy/dirt/Dirt.png
-::res://units/enemy/dust/::1748870218
+::res://units/enemy/dust/::1750436196
 dust.gd::GDScript::-1::1748797804::0::1::::Dust<>Dirt<>::
-Dust.png::CompressedTexture2D::4708638985534740829::1717768280::1748600583::1::::<><>::
+Dust.png::CompressedTexture2D::4708638985534740829::1717768280::1758696481::1::::<><>::
 dust.tscn::PackedScene::5155217855670075210::1748870218::0::1::::<><>::uid://b8c5ujfebc0xl::::res://units/enemy/dust/Dust.png<>res://units/enemy/dust/dust.gd
-::res://units/enemy/pseudomonas/::1749509031
-Pseudomonas FINAL 0.png::CompressedTexture2D::3462227717791902456::1717946338::1748797970::1::::<><>::
-Pseudomonas FINAL 1.png::CompressedTexture2D::3950145409850833152::1717946345::1748600583::1::::<><>::
+::res://units/enemy/pseudomonas/::1750436196
+Pseudomonas FINAL 0.png::CompressedTexture2D::3462227717791902456::1717946338::1758696481::1::::<><>::
+Pseudomonas FINAL 1.png::CompressedTexture2D::3950145409850833152::1717946345::1758696481::1::::<><>::
 pseudomonas.gd::GDScript::-1::1749509031::0::1::::Pseudomonas<>Dirt<>::
 pseudomonas.tscn::PackedScene::2155486796744145248::1748870219::0::1::::<><>::res://units/enemy/pseudomonas/pseudomonas.gd<>uid://bplencxia4dca::::res://units/enemy/pseudomonas/Pseudomonas FINAL 0.png<>uid://bwjqk2l5stc3i::::res://units/enemy/pseudomonas/Pseudomonas FINAL 1.png
-::res://units/enemy/staphylococcus/::1748799252
-Staphylo FINAL 0.png::CompressedTexture2D::6340030806312611594::1717768907::1748536944::1::::<><>::
-Staphylo FINAL 1.png::CompressedTexture2D::579157509142044978::1717768918::1748536944::1::::<><>::
-Staphylo FINAL 2.png::CompressedTexture2D::6798833261214602701::1717768987::1748536944::1::::<><>::
-Staphylo FINAL 3.png::CompressedTexture2D::6505022650926215029::1717769004::1748536944::1::::<><>::
-Staphylo FINAL 4.png::CompressedTexture2D::4960040220663189888::1717769015::1748536944::1::::<><>::
+::res://units/enemy/staphylococcus/::1750436196
+Staphylo FINAL 0.png::CompressedTexture2D::6340030806312611594::1717768907::1758696481::1::::<><>::
+Staphylo FINAL 1.png::CompressedTexture2D::579157509142044978::1717768918::1758696481::1::::<><>::
+Staphylo FINAL 2.png::CompressedTexture2D::6798833261214602701::1717768987::1758696481::1::::<><>::
+Staphylo FINAL 3.png::CompressedTexture2D::6505022650926215029::1717769004::1758696481::1::::<><>::
+Staphylo FINAL 4.png::CompressedTexture2D::4960040220663189888::1717769015::1758696481::1::::<><>::
 staphylococcus.gd::GDScript::-1::1748796721::0::1::::Staphylococcus<>Enemy<>::
 staphylococcus.tscn::PackedScene::2280905251230771460::1748799252::0::1::::<><>::res://units/enemy/staphylococcus/staphylococcus.gd<>uid://cwlfm7smecnhy::::res://units/enemy/staphylococcus/Staphylo FINAL 0.png<>uid://iisv0lirr7cw::::res://units/enemy/staphylococcus/Staphylo FINAL 1.png<>uid://c34n142os6xrx::::res://units/enemy/staphylococcus/Staphylo FINAL 2.png<>uid://cyxc1jg3ehjcv::::res://units/enemy/staphylococcus/Staphylo FINAL 3.png<>uid://ccwxexiwfprye::::res://units/enemy/staphylococcus/Staphylo FINAL 4.png
-::res://units/enemy/streptococcus/::1749505985
-Blueberry FINAL 0.png::CompressedTexture2D::8414777342473889095::1719415133::1748600583::1::::<><>::
-Blueberry FINAL 1.png::CompressedTexture2D::244871839293987189::1719415137::1748600583::1::::<><>::
-Blueberry FINAL 2.png::CompressedTexture2D::3293578172683330194::1719415140::1748600583::1::::<><>::
-Blueberry FINAL 3.png::CompressedTexture2D::5994666115406096278::1719415113::1748600583::1::::<><>::
+::res://units/enemy/streptococcus/::1750436196
+Blueberry FINAL 0.png::CompressedTexture2D::8414777342473889095::1719415133::1758696481::1::::<><>::
+Blueberry FINAL 1.png::CompressedTexture2D::244871839293987189::1719415137::1758696481::1::::<><>::
+Blueberry FINAL 2.png::CompressedTexture2D::3293578172683330194::1719415140::1758696481::1::::<><>::
+Blueberry FINAL 3.png::CompressedTexture2D::5994666115406096278::1719415113::1758696481::1::::<><>::
 streptococcus.gd::GDScript::-1::1749505985::0::1::::Streptococcus<>Enemy<>::
 streptococcus.tscn::PackedScene::5468897108601308246::1748870220::0::1::::<><>::res://units/enemy/streptococcus/streptococcus.gd<>uid://dr5gfhl4tunoh::::res://units/enemy/streptococcus/Blueberry FINAL 0.png<>uid://dqvad7kgre66::::res://units/enemy/streptococcus/Blueberry FINAL 1.png<>uid://bm6o0srlwl5ys::::res://units/enemy/streptococcus/Blueberry FINAL 2.png<>uid://crn4jmadn8pis::::res://units/enemy/streptococcus/Blueberry FINAL 3.png
-::res://units/hd_renders/::1749023608
-aspergillus_hd.png::CompressedTexture2D::4640830860948695966::1749023322::1749023607::1::::<><>::
-bacteriophage_hd.png::CompressedTexture2D::667304134098544430::1749022282::1749022319::1::::<><>::
-dirt_hd.png::CompressedTexture2D::4747195590391998032::1749023167::1749023607::1::::<><>::
-dust_hd.png::CompressedTexture2D::1506253689073303080::1749023179::1749023607::1::::<><>::
-macrophage_hd.png::CompressedTexture2D::6937880278243482632::1749021957::1749022319::1::::<><>::
-neutrophil_hd.png::CompressedTexture2D::6373078793145753345::1749022695::1749023607::1::::<><>::
-pseudomonas_hd.png::CompressedTexture2D::4687172507668038808::1749023502::1749023608::1::::<><>::
-staphylococcus_hd.png::CompressedTexture2D::5683186103496695996::1749022948::1749023607::1::::<><>::
-streptococcus_hd.png::CompressedTexture2D::3220087107850781589::1749022092::1749022319::1::::<><>::
-tank_hd.png::CompressedTexture2D::2530160647744029244::1749022433::1749023608::1::::<><>::
+::res://units/hd_renders/::1750436196
+aspergillus_hd.png::CompressedTexture2D::4640830860948695966::1749023322::1758696481::1::::<><>::
+bacteriophage_hd.png::CompressedTexture2D::667304134098544430::1749022282::1758696481::1::::<><>::
+dirt_hd.png::CompressedTexture2D::4747195590391998032::1749023167::1758696481::1::::<><>::
+dust_hd.png::CompressedTexture2D::1506253689073303080::1749023179::1758696481::1::::<><>::
+macrophage_hd.png::CompressedTexture2D::6937880278243482632::1749021957::1758696481::1::::<><>::
+neutrophil_hd.png::CompressedTexture2D::6373078793145753345::1749022695::1758696481::1::::<><>::
+pseudomonas_hd.png::CompressedTexture2D::4687172507668038808::1749023502::1758696481::1::::<><>::
+staphylococcus_hd.png::CompressedTexture2D::5683186103496695996::1749022948::1758696480::1::::<><>::
+streptococcus_hd.png::CompressedTexture2D::3220087107850781589::1749022092::1758696481::1::::<><>::
+tank_hd.png::CompressedTexture2D::2530160647744029244::1749022433::1758696481::1::::<><>::
 ::res://utils/::1745235428
-::res://uuid/::1748526468
-example.gd::GDScript::-1::1744906478::0::1::::<>Node2D<>::
-example.tscn::PackedScene::2868419363983474167::1745140787::0::1::::<><>::res://uuid/example.gd
-MinosUUIDGenerator.gd::GDScript::-1::1744905987::0::1::::MinosUUIDGenerator<>Node<>::
-plugin.cfg::TextFile::-1::1744905821::0::1::::<><>::
-plugin.gd::GDScript::-1::1744905821::0::1::::<>EditorPlugin<>::
-uuidIcon.svg::CompressedTexture2D::6804195210204818858::1744905821::1745146480::1::::<><>::
-UUIDManager.gd::GDScript::-1::1744906061::0::1::::UUIDManager<>Node<>res://uuid/uuidIcon.svg::
+::res://uuid/::1758696179
+example.gd::GDScript::-1::1758696163::0::1::::<>Node2D<>::
+example.tscn::PackedScene::2868419363983474167::1758696163::0::1::::<><>::res://uuid/example.gd
+MinosUUIDGenerator.gd::GDScript::-1::1758696163::0::1::::MinosUUIDGenerator<>Node<>::
+plugin.cfg::TextFile::-1::1758696163::0::1::::<><>::
+plugin.gd::GDScript::-1::1758696163::0::1::::<>EditorPlugin<>::
+uuidIcon.svg::CompressedTexture2D::6804195210204818858::1758696163::1758696480::1::::<><>::
+UUIDManager.gd::GDScript::-1::1758696163::0::1::::UUIDManager<>Node<>res://uuid/uuidIcon.svg::
