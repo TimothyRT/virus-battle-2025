@@ -3,5 +3,4 @@
 godot/
 /android/
 *.cache
-*.import
 *.tmp
