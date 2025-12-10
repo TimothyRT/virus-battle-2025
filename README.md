@@ -1,6 +1,6 @@
 # Virus battle strategy game (2025 vers)
 
-A simple demonstration of how CNNs can be integrated into desktop games built with Godot. The player may submit a doodle made on the game's canvas. Should the drawing be classified as a white blood cell, the player fires at the closest enemy; if the drawing is classified as a red blood cell, the player's oxygen count increases by 1 instead. Oxygens may be used to purchase supporting troops that march forward at the enemy.
+A simple demonstration of how CNNs can be integrated into desktop games built with Godot. The player may submit a doodle made on the game's canvas. Should the drawing be classified as a white blood cell, the player fires at the closest enemy; should it be considered a red blood cell, the player's oxygen count increases by 1 instead. Oxygens may be used to purchase supporting troops that march forward at the enemy.
 
 This project uses IREE's execution environment to deploy the image classification model.
 
