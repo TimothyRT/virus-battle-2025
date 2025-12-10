@@ -3,11 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c525w18nlle0a"
-valid=false
+path="res://godot/imported/Basophil.ttf-d35c7466d29e08849f29b8a696c34081.fontdata"
 
 [deps]
 
 source_file="res://fonts/Basophil.ttf"
+dest_files=["res://godot/imported/Basophil.ttf-d35c7466d29e08849f29b8a696c34081.fontdata"]
 
 [params]
 

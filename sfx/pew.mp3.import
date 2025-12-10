@@ -3,11 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://btd11myhrfcfj"
-valid=false
+path="res://godot/imported/pew.mp3-1314ea4098365a5bddf1de5c55827acd.mp3str"
 
 [deps]
 
 source_file="res://sfx/pew.mp3"
+dest_files=["res://godot/imported/pew.mp3-1314ea4098365a5bddf1de5c55827acd.mp3str"]
 
 [params]
 

@@ -3,11 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bpki12mqn1htn"
-valid=false
+path="res://godot/imported/happy_end.mp3-9334f9b8a9990e98862baed0dda58d08.mp3str"
 
 [deps]
 
 source_file="res://sfx/happy_end.mp3"
+dest_files=["res://godot/imported/happy_end.mp3-9334f9b8a9990e98862baed0dda58d08.mp3str"]
 
 [params]
 

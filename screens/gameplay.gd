@@ -15,8 +15,8 @@ class_name Gameplay
 	"bacteriophage": preload("res://units/allies/bacteriophage/bacteriophage.tscn")
 }
 @onready var hero = $GameArea/Tank
-var oxygen_count = 0
-var enemy_count = 0
+@export var oxygen_count: int = 0
+var _enemy_count = 0
 var wave_count = 0
 var wave_max: int
 
@@ -31,10 +31,11 @@ func _ready() -> void:
 
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventKey and event.pressed:
-		if event.keycode == KEY_0:
-			Session.current_level = 6
-			Transition.switch_scene("gameplay")
+	pass
+	#if event is InputEventKey and event.pressed:
+		#if event.keycode == KEY_0:
+			#Session.current_level = 6
+			#Transition.switch_scene("gameplay")
 			
 	#if event is InputEventKey and event.pressed:
 		#match event.keycode:
@@ -83,7 +84,7 @@ func place_unit(unit_name: String, x: int, y: int) -> void:
 	
 	if unit_name in ["aspergillus", "dirt", "dust", "pseudomonas", "staphylococcus", "streptococcus"]:
 		y += 200
-		enemy_count += 1
+		_enemy_count += 1
 		
 	var new_unit = d_unit[unit_name].instantiate()
 	new_unit.global_position.x = x_noised
@@ -94,9 +95,9 @@ func place_unit(unit_name: String, x: int, y: int) -> void:
 
 
 func destroy_enemy() -> void:
-	enemy_count -= 1
+	_enemy_count -= 1
 	
-	if wave_count == wave_max and enemy_count <= 0:
+	if wave_count == wave_max and _enemy_count <= 0:
 		await get_tree().create_timer(2.0).timeout
 		if Session.current_level == Session.last_level_available:
 			Transition.switch_scene("credits")
@@ -107,7 +108,7 @@ func destroy_enemy() -> void:
 	
 	
 func update_enemy_debug():
-	%EnemyDebugText.text = "[color=black] Wave: " + str(wave_count) + "; enemy: " + str(enemy_count) + "[/color]"
+	%EnemyDebugText.text = "[color=black] Wave: " + str(wave_count) + "; enemy: " + str(_enemy_count) + "[/color]"
 
 
 func _set_max_waves():
